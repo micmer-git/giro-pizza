@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contatti | Strade Segrete | Tour in Bici a Bergamo</title>
-  <meta name="description" content="Contattaci per organizzare il tuo tour in bici personalizzato a Bergamo e dintorni. Compila il form per ricevere informazioni sui nostri percorsi esclusivi.">
+  <title>Contact | Secret Roads | Bike Tours in Bergamo</title>
+  <meta name="description" content="Contact us to organize your custom bike tour in Bergamo and surroundings. Fill out the form for info on our exclusive routes.">
   
   <!-- Preconnect per Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,26 +14,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Open+Sans:wght@300;400&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
   
   <!-- CSS Principale -->
-  <link rel="stylesheet" href="fixed-styles.css">
+  <link rel="stylesheet" href="../fixed-styles.css">
 </head>
 <body>
   <nav class="minimal-nav">
     <a href="index.html" class="nav-button">HOME</a>
-    <a href="contatti.html" class="nav-button active">CONTATTI</a>
-    <a href="chi-siamo.html" class="nav-button">CHI SIAMO</a>
+    <a href="contact.html" class="nav-button active">CONTACT</a>
+    <a href="about-us.html" class="nav-button">ABOUT US</a>
   </nav>
   
   <div class="language-selector">
-    <a href="contatti.html" class="lang-button active">IT</a>
-    <a href="en/contact.html" class="lang-button">EN</a>
+    <a href="../contatti.html" class="lang-button">IT</a>
+    <a href="contact.html" class="lang-button active">EN</a>
   </div>
   
   <div class="fullpage-container">
     <section class="fullpage-section" id="contact-hero">
       <div class="background" style="background-image: url('https://images.unsplash.com/photo-1528834342297-fdefb9a5a92b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
       <div class="content">
-        <h1 class="fade-in">CONTATTI</h1>
-        <p class="quote fade-in delay-1">Pianifica il tuo prossimo tour su due ruote</p>
+    <h1 class="fade-in">CONTACT</h1>
+    <p class="quote fade-in delay-1">Plan your next two-wheeled adventure</p>
       </div>
       <div class="scroll-indicator"></div>
     </section>
@@ -41,12 +41,12 @@
     <section class="fullpage-section" id="contact-form">
       <div class="background gradient"></div>
       <div class="content">
-        <h2 class="fade-in">RICHIEDI INFORMAZIONI</h2>
-        <p class="description fade-in delay-1">Compila il form sottostante per ricevere informazioni personalizzate sui nostri tour o per organizzare un'esperienza su misura per te.</p>
+        <h2 class="fade-in">REQUEST INFORMATION</h2>
+        <p class="description fade-in delay-1">Fill out the form below to receive customized information about our tours or to plan a tailor-made experience.</p>
         
         <form class="contact-form fade-in delay-2">
           <div class="form-group">
-            <label for="name" class="form-label">Nome e Cognome</label>
+            <label for="name" class="form-label">Full Name</label>
             <input type="text" id="name" class="form-input" required>
           </div>
           
@@ -56,39 +56,39 @@
           </div>
           
           <div class="form-group">
-            <label for="phone" class="form-label">Telefono</label>
+            <label for="phone" class="form-label">Phone</label>
             <input type="tel" id="phone" class="form-input">
           </div>
           
           <div class="form-group">
-            <label for="tour-type" class="form-label">Tipo di Tour</label>
+            <label for="tour-type" class="form-label">Tour Type</label>
             <select id="tour-type" class="form-select form-input">
-              <option value="">Seleziona un'opzione</option>
-              <option value="colline">Tour delle Colline</option>
-              <option value="citta-alta">Città Alta e Dintorni</option>
-              <option value="valli">Valli Bergamasche</option>
-              <option value="enogastronomico">Tour Enogastronomico</option>
-              <option value="personalizzato">Tour Personalizzato</option>
+              <option value="">Select an option</option>
+              <option value="colline">Hills Tour</option>
+              <option value="citta-alta">Upper Town and Surroundings</option>
+              <option value="valli">Bergamo Valleys</option>
+              <option value="enogastronomico">Food & Wine Tour</option>
+              <option value="personalizzato">Custom Tour</option>
             </select>
           </div>
           
           <div class="form-group">
-            <label for="participants" class="form-label">Numero di Partecipanti</label>
+            <label for="participants" class="form-label">Number of Participants</label>
             <select id="participants" class="form-select form-input">
-              <option value="1">1 persona</option>
-              <option value="2">2 persone</option>
-              <option value="3-5">3-5 persone</option>
-              <option value="6-10">6-10 persone</option>
-              <option value="10+">Più di 10 persone</option>
+              <option value="1">1 person</option>
+              <option value="2">2 people</option>
+              <option value="3-5">3-5 people</option>
+              <option value="6-10">6-10 people</option>
+              <option value="10+">More than 10 people</option>
             </select>
           </div>
           
           <div class="form-group">
-            <label for="message" class="form-label">Messaggio</label>
-            <textarea id="message" class="form-input form-textarea" placeholder="Raccontaci le tue esigenze, il tuo livello di esperienza e qualsiasi altra informazione utile..."></textarea>
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" class="form-input form-textarea" placeholder="Tell us your needs, your experience level and any other useful information..."></textarea>
           </div>
           
-          <button type="submit" class="minimal-button">INVIA RICHIESTA</button>
+          <button type="submit" class="minimal-button">SEND REQUEST</button>
         </form>
       </div>
     </section>
@@ -96,8 +96,8 @@
     <section class="fullpage-section" id="direct-contact">
       <div class="background" style="background-image: url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
       <div class="content">
-        <h2 class="fade-in">CONTATTACI DIRETTAMENTE</h2>
-        <p class="description fade-in delay-1">Preferisci parlare direttamente con noi? Ecco come puoi raggiungerci:</p>
+        <h2 class="fade-in">CONTACT US DIRECTLY</h2>
+        <p class="description fade-in delay-1">Prefer to speak with us in person? Here's how you can reach us:</p>
         
         <div class="contact-info">
           <div class="contact-item fade-in delay-2">
@@ -199,7 +199,7 @@
         form.addEventListener('submit', function(e) {
           e.preventDefault();
           // Qui andrebbe l'invio del form, per ora solo un alert
-          alert('Grazie per averci contattato! Ti risponderemo al più presto.');
+          alert('Thank you for contacting us! We will get back to you shortly.');
           form.reset();
         });
       }

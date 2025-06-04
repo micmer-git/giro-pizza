@@ -14,8 +14,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Open+Sans:wght@300;400&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
   
   <!-- Main CSS -->
-  <link rel="stylesheet" href="../css/fixed-styles.css">
-  <link rel="stylesheet" href="../css/strava-integration.css">
+  <link rel="stylesheet" href="../fixed-styles.css">
+  <link rel="stylesheet" href="../strava-integration.css">
   
   <!-- Leaflet CSS for maps -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
@@ -46,7 +46,7 @@
       <div class="background gradient"></div>
       <div class="content">
         <div class="bio-container">
-          <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Founder of Secret Roads" class="bio-image fade-in">
+          <img src="../images/chi-siamo/profile.jpg" alt="Founder of Secret Roads" class="bio-image fade-in">
           <div class="bio-content">
             <h2 class="fade-in">MARCO BIANCHI</h2>
             <p class="fade-in delay-1">Born and raised among the hills of Bergamo, I've transformed my passion for cycling into a mission: to help enthusiasts discover the lesser-known roads of my homeland.</p>
@@ -185,7 +185,7 @@
               <p class="map-description fade-in delay-1">Our tours will take you through some of the most spectacular landscapes of the Bergamo hills, with panoramic views extending to the Po Valley.</p>
               <a href="#" class="minimal-button fade-in delay-2">DISCOVER TOURS</a>
             </div>
-            <div class="mixed-image" style="background-image: url('https://images.unsplash.com/photo-1501621667575-af81f1f0bacc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
+            <div class="mixed-image" style="background-image: url('../images/carousel/mixed1.jpg')"></div>
           </div>
           
           <!-- Slide 2 -->
@@ -195,7 +195,7 @@
               <p class="map-description fade-in delay-1">Each tour includes stops at local producers, where you can taste cheeses, cured meats, wines, and other Bergamo specialties.</p>
               <a href="#" class="minimal-button fade-in delay-2">FOOD & WINE TOURS</a>
             </div>
-            <div class="mixed-image" style="background-image: url('https://images.unsplash.com/photo-1528834342297-fdefb9a5a92b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
+            <div class="mixed-image" style="background-image: url('../images/carousel/mixed2.jpg')"></div>
           </div>
           
           <!-- Slide 3 -->
@@ -205,7 +205,7 @@
               <p class="map-description fade-in delay-1">Discover routes away from mass tourism, secondary roads and paths that only locals know, for an authentic and unique experience.</p>
               <a href="#" class="minimal-button fade-in delay-2">EXPLORE</a>
             </div>
-            <div class="mixed-image" style="background-image: url('https://images.unsplash.com/photo-1506535995048-638aa1b62b77?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
+            <div class="mixed-image" style="background-image: url('../images/carousel/mixed3.jpg')"></div>
           </div>
         </div>
         
@@ -220,6 +220,7 @@
   
   <!-- Leaflet JS for maps -->
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.5.1/gpx.min.js"></script>
   
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -270,99 +271,48 @@
       
       // Map initialization
       if (document.getElementById('map1')) {
-        // Map 1: Hills Tour
         const map1 = L.map('map1').setView([45.7, 9.67], 12);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
           maxZoom: 18
         }).addTo(map1);
-        
-        // Simulated route for Hills Tour
-        const latlngs1 = [
-          [45.70, 9.65],
-          [45.71, 9.66],
-          [45.72, 9.68],
-          [45.73, 9.70],
-          [45.72, 9.72],
-          [45.71, 9.73],
-          [45.70, 9.72],
-          [45.69, 9.70],
-          [45.68, 9.68],
-          [45.69, 9.66],
-          [45.70, 9.65]
-        ];
-        
-        const polyline1 = L.polyline(latlngs1, {
-          color: '#4A7C59',
-          weight: 5,
-          opacity: 0.8
+
+        new L.GPX('../gpx/route1.gpx', {
+          async: true,
+          polyline_options: { color: '#4A7C59', weight: 5, opacity: 0.8 }
+        }).on('loaded', function(e) {
+          map1.fitBounds(e.target.getBounds());
         }).addTo(map1);
-        
-        map1.fitBounds(polyline1.getBounds());
       }
       
       if (document.getElementById('map2')) {
-        // Map 2: Upper Town and Surroundings
         const map2 = L.map('map2').setView([45.7, 9.67], 13);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
           maxZoom: 18
         }).addTo(map2);
-        
-        // Simulated route for Upper Town and Surroundings
-        const latlngs2 = [
-          [45.705, 9.662],
-          [45.710, 9.665],
-          [45.715, 9.670],
-          [45.718, 9.675],
-          [45.715, 9.680],
-          [45.710, 9.685],
-          [45.705, 9.680],
-          [45.700, 9.675],
-          [45.698, 9.670],
-          [45.700, 9.665],
-          [45.705, 9.662]
-        ];
-        
-        const polyline2 = L.polyline(latlngs2, {
-          color: '#4A7C59',
-          weight: 5,
-          opacity: 0.8
+
+        new L.GPX('../gpx/route2.gpx', {
+          async: true,
+          polyline_options: { color: '#4A7C59', weight: 5, opacity: 0.8 }
+        }).on('loaded', function(e) {
+          map2.fitBounds(e.target.getBounds());
         }).addTo(map2);
-        
-        map2.fitBounds(polyline2.getBounds());
       }
       
       if (document.getElementById('map3')) {
-        // Map 3: Bergamo Valleys
         const map3 = L.map('map3').setView([45.8, 9.7], 11);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
           maxZoom: 18
         }).addTo(map3);
-        
-        // Simulated route for Bergamo Valleys
-        const latlngs3 = [
-          [45.75, 9.65],
-          [45.78, 9.67],
-          [45.82, 9.70],
-          [45.85, 9.73],
-          [45.88, 9.75],
-          [45.85, 9.78],
-          [45.82, 9.80],
-          [45.78, 9.78],
-          [45.75, 9.75],
-          [45.72, 9.70],
-          [45.75, 9.65]
-        ];
-        
-        const polyline3 = L.polyline(latlngs3, {
-          color: '#4A7C59',
-          weight: 5,
-          opacity: 0.8
+
+        new L.GPX('../gpx/route3.gpx', {
+          async: true,
+          polyline_options: { color: '#4A7C59', weight: 5, opacity: 0.8 }
+        }).on('loaded', function(e) {
+          map3.fitBounds(e.target.getBounds());
         }).addTo(map3);
-        
-        map3.fitBounds(polyline3.getBounds());
       }
       
       // Map carousel management

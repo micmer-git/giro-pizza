@@ -9,7 +9,8 @@ html, body {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: #000;
 }
 
