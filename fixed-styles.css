@@ -520,15 +520,3 @@ h3 {
     justify-content: center;
   }
 }
-
-/* Giri Tipici */
-.giri-list {
-  list-style: disc;
-  margin: 1rem 0;
-  padding-left: 1.5rem;
-  text-align: left;
-}
-
-.giri-list li {
-  margin: 0.3rem 0;
-}
