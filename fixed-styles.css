@@ -62,6 +62,11 @@ html, body {
   background: linear-gradient(135deg, #1A3C2B 0%, #4A7C59 100%);
 }
 
+/* Maggiore oscuramento per l'immagine della home */
+#hero .background::after {
+  background: rgba(0, 0, 0, 0.45);
+}
+
 /* Stili Contenuto */
 .content {
   width: 100%;
