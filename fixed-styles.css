@@ -17,6 +17,7 @@ html, body {
 /* Layout Fullpage */
 .fullpage-container {
   height: 100vh;
+  height: 100dvh; /* assicura piena altezza anche su mobile */
   overflow-y: auto; /* Cambiato da scroll a auto per gestire meglio l'overflow */
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -431,6 +432,26 @@ h3 {
 .form-textarea {
   min-height: 150px;
   resize: vertical;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  align-items: flex-start;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-link {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Animazioni */
