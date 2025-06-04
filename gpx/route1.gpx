@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Codex">
+ <trk><name>Route 1</name><trkseg>
+  <trkpt lat="45.70" lon="9.65" />
+  <trkpt lat="45.71" lon="9.66" />
+  <trkpt lat="45.72" lon="9.68" />
+  <trkpt lat="45.73" lon="9.70" />
+  <trkpt lat="45.72" lon="9.72" />
+  <trkpt lat="45.71" lon="9.73" />
+  <trkpt lat="45.70" lon="9.72" />
+  <trkpt lat="45.69" lon="9.70" />
+  <trkpt lat="45.68" lon="9.68" />
+  <trkpt lat="45.69" lon="9.66" />
+  <trkpt lat="45.70" lon="9.65" />
+ </trkseg></trk>
+</gpx>
