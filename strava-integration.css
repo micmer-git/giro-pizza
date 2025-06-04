@@ -75,6 +75,14 @@
   position: relative;
 }
 
+/* Featured activity iframe */
+.featured-iframe {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: block;
+}
+
 .map-slide {
   position: absolute;
   top: 0;

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Strade Segrete | Tour in Bici a Bergamo</title>
+  <title>Giro Pizza | An endless loop of pizza slices and hidden climbs</title>
   <meta name="description" content="Scopri Bergamo e dintorni in bicicletta con tour guidati su strade poco conosciute e degustazioni gastronomiche locali.">
   
   <!-- Preconnect per Google Fonts -->
@@ -32,8 +32,8 @@
     <section class="fullpage-section" id="hero">
       <div class="background" style="background-image: url('https://images.unsplash.com/photo-1501621667575-af81f1f0bacc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
       <div class="content">
-        <h1 class="fade-in">STRADE SEGRETE</h1>
-        <p class="quote fade-in delay-1">Esplora Bergamo come non l'hai mai vista</p>
+        <h1 class="fade-in">GIRO PIZZA</h1>
+        <p class="quote fade-in delay-1">An endless loop of pizza slices and hidden climbs</p>
       </div>
       <div class="scroll-indicator"></div>
     </section>
@@ -69,7 +69,7 @@
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               </svg>
             </div>
-            <h3 class="fade-in delay-2">STRADE SEGRETE</h3>
+            <h3 class="fade-in delay-2">GIRO PIZZA</h3>
             <p class="fade-in delay-3">Percorsi esclusivi lontani dal turismo di massa, selezionati dopo anni di esplorazione del territorio bergamasco.</p>
           </div>
           <div class="feature">
@@ -96,18 +96,8 @@
     </section>
     
     <section class="fullpage-section" id="gallery">
-      <div class="carousel">
-        <div class="carousel-item active" style="background-image: url('images/carousel/slide1.jpg')"></div>
-        <div class="carousel-item" style="background-image: url('images/carousel/slide2.jpg')"></div>
-        <div class="carousel-item" style="background-image: url('images/carousel/slide3.jpg')"></div>
-        <div class="carousel-item" style="background-image: url('images/carousel/slide4.jpg')"></div>
-      </div>
-      <div class="carousel-indicators">
-        <span class="indicator active"></span>
-        <span class="indicator"></span>
-        <span class="indicator"></span>
-        <span class="indicator"></span>
-      </div>
+      <div class="carousel"></div>
+      <div class="carousel-indicators"></div>
       <div class="carousel-controls">
         <button class="carousel-control prev">&lt;</button>
         <button class="carousel-control next">&gt;</button>
@@ -163,11 +153,45 @@
       });
       
       // Gestione del carosello
-      const carouselItems = document.querySelectorAll('.carousel-item');
-      const indicators = document.querySelectorAll('.indicator');
+      const carouselContainer = document.querySelector('.carousel');
+      const indicatorsContainer = document.querySelector('.carousel-indicators');
+      let carouselItems = [];
+      let indicators = [];
       const prevBtn = document.querySelector('.prev');
       const nextBtn = document.querySelector('.next');
       let currentSlide = 0;
+
+      async function fetchImages(path = 'images') {
+        const res = await fetch(`https://api.github.com/repos/micmer-git/giro-pizza/contents/${path}`);
+        const data = await res.json();
+        let imgs = [];
+        for (const item of data) {
+          if (item.type === 'file' && /\.(jpg|jpeg|png|gif)$/i.test(item.name)) {
+            imgs.push(item.download_url);
+          } else if (item.type === 'dir') {
+            const nested = await fetchImages(item.path);
+            imgs = imgs.concat(nested);
+          }
+        }
+        return imgs;
+      }
+
+      const imageUrls = await fetchImages();
+      imageUrls.forEach((url, idx) => {
+        const div = document.createElement('div');
+        div.className = 'carousel-item';
+        div.style.backgroundImage = `url('${url}')`;
+        if (idx === 0) div.classList.add('active');
+        carouselContainer.appendChild(div);
+
+        const span = document.createElement('span');
+        span.className = 'indicator';
+        if (idx === 0) span.classList.add('active');
+        indicatorsContainer.appendChild(span);
+      });
+
+      carouselItems = carouselContainer.querySelectorAll('.carousel-item');
+      indicators = indicatorsContainer.querySelectorAll('.indicator');
       
       function showSlide(index) {
         // Rimuovi la classe active da tutti gli elementi
