@@ -44,7 +44,7 @@
         <h2 class="fade-in">REQUEST INFORMATION</h2>
         <p class="description fade-in delay-1">Fill out the form below to receive customized information about our tours or to plan a tailor-made experience.</p>
         
-        <form class="contact-form fade-in delay-2">
+        <form class="contact-form fade-in delay-2" action="mailto:michelemerelli.8@gmail.com" method="post" enctype="text/plain">
           <div class="form-group">
             <label for="name" class="form-label">Full Name</label>
             <input type="text" id="name" class="form-input" required>
@@ -193,13 +193,10 @@
         observer.observe(section);
       });
       
-      // Gestione del form
+      // Form handling
       const form = document.querySelector('.contact-form');
       if (form) {
-        form.addEventListener('submit', function(e) {
-          e.preventDefault();
-          // Qui andrebbe l'invio del form, per ora solo un alert
-          alert('Thank you for contacting us! We will get back to you shortly.');
+        form.addEventListener('submit', function() {
           form.reset();
         });
       }

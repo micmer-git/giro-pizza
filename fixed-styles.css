@@ -285,6 +285,17 @@ h3 {
   opacity: 0.9;
 }
 
+/* Featured Tours */
+#featured-tours .tour-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+#featured-tours .tour-list li {
+  margin-bottom: 0.5rem;
+}
+
 /* Carousel */
 .carousel {
   position: relative;
