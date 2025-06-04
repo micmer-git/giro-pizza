@@ -15,6 +15,36 @@
   
   <!-- CSS Principale -->
   <link rel="stylesheet" href="fixed-styles.css">
+  <style>
+    .background {
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .background img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
+    }
+    .background-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.35); /* semi-transparent dark overlay */
+      z-index: -1;
+    }
+  </style>
 </head>
 <body>
   <nav class="minimal-nav">
@@ -30,7 +60,10 @@
   
   <div class="fullpage-container">
     <section class="fullpage-section" id="hero">
-      <div class="background" style="background-image: url('images/home.jpg')"></div>
+      <div class="background">
+        <img src="images/home.jpg" alt="Giro Pizza Background" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;z-index:-2;">
+        <div class="background-overlay"></div>
+      </div>
       <div class="content">
         <h1 class="fade-in">GIRO PIZZA</h1>
         <p class="quote fade-in delay-1">Un'infinita giostra di fette di pizza e salite nascoste</p>
@@ -38,50 +71,34 @@
       <div class="scroll-indicator"></div>
     </section>
     
-    <section class="fullpage-section" id="tour-bergamo">
-      <div class="background gradient"></div>
-      <div class="content">
-        <h2 class="fade-in">TOUR DELLE COLLINE</h2>
-        <div class="carousel tour-carousel">
-          <div class="carousel-item active" style="background-image: url('images/carousel/carousel_1.jpg')">
-          <h3>Bormio e Stelvio</h3>
-          <p class="carousel-description">Salite leggendarie e panorami epici.</p>
-          <div class="stats">
-              <div class="stat fade-in delay-1"><span class="stat-number" data-value="80">0</span> km</div>
-              <div class="stat fade-in delay-1"><span class="stat-number" data-value="2200">0</span> m</div>
-              <div class="stat fade-in delay-1"><span class="stat-number" data-value="5">0</span> h</div>
-            </div>
-            <a href="bormio.html" class="minimal-button fade-in delay-2">DETTAGLI</a>
+    <section class="fullpage-section" id="tour-bergamo" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+      <div class="background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+        <img src="images/home.jpg" alt="Tour delle Colline Background" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -2;">
+        <div class="background-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.35); z-index: -1;"></div>
+      </div>
+      <div class="content" style="text-align: center; z-index: 0;">
+        <h2 class="fade-in">I NOSTRI TOUR</h2>
+        <div class="carousel tour-carousel" style="max-width: 80%; margin: auto;">
+          <div class="carousel-item active">
+            <h3>Bormio e Stelvio</h3>
+            <p class="carousel-description">Salite leggendarie e panorami epici.</p>
+            <div class="stats">
+                <div class="stat fade-in delay-1"><span class="stat-number" data-value="80">0</span> km</div>
+                <div class="stat fade-in delay-1"><span class="stat-number" data-value="2200">0</span> m</div>
+                <div class="stat fade-in delay-1"><span class="stat-number" data-value="5">0</span> h</div>
+              </div>
+              <a href="bormio.html" class="minimal-button fade-in delay-2">DETTAGLI</a>
           </div>
-          <div class="carousel-item" style="background-image: url('images/carousel/carousel_2.jpg')">
-          <h3>Dolomiti</h3>
-          <p class="carousel-description">I passi iconici delle Dolomiti.</p>
-          <div class="stats">
-              <div class="stat"><span class="stat-number" data-value="60">0</span> km</div>
-              <div class="stat"><span class="stat-number" data-value="1800">0</span> m</div>
-              <div class="stat"><span class="stat-number" data-value="4">0</span> h</div>
-            </div>
-            <a href="dolomiti.html" class="minimal-button">DETTAGLI</a>
+          <div class="carousel-item">
+            <h3>Dolomiti</h3>
+            <p class="carousel-description">I passi iconici delle Dolomiti.</p>
+            <div class="stats">
+                <div class="stat"><span class="stat-number" data-value="60">0</span> km</div>
+                <div class="stat"><span class="stat-number" data-value="1800">0</span> m</div>
+                <div class="stat"><span class="stat-number" data-value="4">0</span> h</div>
+              </div>
+              <a href="dolomiti.html" class="minimal-button">DETTAGLI</a>
           </div>
-          <div class="carousel-item" style="background-image: url('images/home.jpg')">
-          <h3>Valpolicella</h3>
-          <p class="carousel-description">Vigneti, Lessinia e sapori intensi.</p>
-          <div class="stats">
-              <div class="stat"><span class="stat-number" data-value="70">0</span> km</div>
-              <div class="stat"><span class="stat-number" data-value="1000">0</span> m</div>
-              <div class="stat"><span class="stat-number" data-value="4">0</span> h</div>
-            </div>
-            <a href="valpolicella.html" class="minimal-button">DETTAGLI</a>
-          </div>
-        </div>
-        <div class="carousel-indicators">
-          <span class="indicator active"></span>
-          <span class="indicator"></span>
-          <span class="indicator"></span>
-        </div>
-        <div class="carousel-controls">
-          <button class="carousel-control prev">&lt;</button>
-          <button class="carousel-control next">&gt;</button>
         </div>
       </div>
     </section>
@@ -123,19 +140,15 @@
       </div>
     </section>
 
-    <section class="fullpage-section" id="featured-tours">
-      <div class="background" style="background-image: url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
-      <div class="content">
-        <h2 class="fade-in">TOUR IN EVIDENZA</h2>
-        <p class="fade-in delay-1">Scegli tra gravel o strada, da 3 a 5 giorni.</p>
-        <p class="fade-in delay-3">Noleggio bici <strong>3T</strong> disponibile su richiesta.</p>
-      </div>
-    </section>
 
     <section class="fullpage-section" id="gallery">
       <div class="carousel">
-        <div class="carousel-item active" style="background-image: url('images/carousel/carousel_1.jpg')"></div>
-        <div class="carousel-item" style="background-image: url('images/carousel/carousel_2.jpg')"></div>
+        <div class="carousel-item active">
+          <img src="images/carousel/carousel_1.jpg" alt="Bormio e Stelvio" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel/carousel_2.jpg" alt="Dolomiti" style="width:100%;height:100%;object-fit:cover;">
+        </div>
       </div>
       <div class="carousel-indicators">
         <span class="indicator active"></span>

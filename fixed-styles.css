@@ -25,15 +25,15 @@ html, body {
 }
 
 .fullpage-section {
-  min-height: 100vh; /* Cambiato da height a min-height per adattarsi al contenuto */
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   scroll-snap-align: start;
   position: relative;
-  overflow-x: hidden; /* Previene lo scrolling orizzontale */
-  overflow-y: auto; /* Permette lo scrolling verticale se necessario */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 /* Stili Background */
@@ -70,10 +70,12 @@ html, body {
 
 /* Stili Contenuto */
 .content {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -484,9 +486,7 @@ h3 {
 
 /* Tour Bergamo Section - Layout Asimmetrico */
 #tour-bergamo .content {
-  align-items: flex-start;
-  text-align: left;
-  padding-left: 10%;
+  padding: 2rem;
 }
 
 #tour-bergamo .background {
