@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour in Bici nel Nord Italia | Strade Segrete</title>
+    <meta name="description" content="Scopri i nostri tour guidati in bici nel Nord Italia. Percorsi esclusivi nelle Dolomiti, Laghi, Piemonte e altre regioni con esperienze gastronomiche uniche.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Tour in Bici nel Nord Italia | Strade Segrete">
+    <meta property="og:description" content="Scopri i nostri tour guidati in bici nel Nord Italia. Percorsi esclusivi con esperienze gastronomiche uniche.">
+    <meta property="og:image" content="images/og-image-tour.jpg">
+    <meta property="og:url" content="https://stradesegrete.it/tour.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "TouristTrip",
+          "position": 1,
+          "name": "Tra le Vette delle Dolomiti",
+          "description": "Un viaggio indimenticabile attraverso paesaggi UNESCO, con soste gastronomiche in rifugi tipici.",
+          "touristType": ["Cyclists", "Food enthusiasts"],
+          "offers": {
+            "@type": "Offer",
+            "price": "1890",
+            "priceCurrency": "EUR"
+          },
+          "itinerary": {
+            "@type": "ItemList",
+            "numberOfItems": 7,
+            "itemListElement": "Tour di 7 giorni attraverso le Dolomiti"
+          }
+        },
+        {
+          "@type": "TouristTrip",
+          "position": 2,
+          "name": "Giro dei Laghi Lombardi",
+          "description": "Un percorso panoramico tra i laghi di Como, Iseo e Garda, con degustazioni di pesce di lago e vini locali.",
+          "touristType": ["Cyclists", "Food enthusiasts"],
+          "offers": {
+            "@type": "Offer",
+            "price": "1690",
+            "priceCurrency": "EUR"
+          },
+          "itinerary": {
+            "@type": "ItemList",
+            "numberOfItems": 6,
+            "itemListElement": "Tour di 6 giorni tra i laghi del Nord Italia"
+          }
+        },
+        {
+          "@type": "TouristTrip",
+          "position": 3,
+          "name": "Langhe e Tartufi del Piemonte",
+          "description": "Un percorso enogastronomico tra le colline del Barolo e del tartufo, su strade secondarie immerse nei vigneti.",
+          "touristType": ["Cyclists", "Food enthusiasts"],
+          "offers": {
+            "@type": "Offer",
+            "price": "1790",
+            "priceCurrency": "EUR"
+          },
+          "itinerary": {
+            "@type": "ItemList",
+            "numberOfItems": 5,
+            "itemListElement": "Tour di 5 giorni nelle Langhe piemontesi"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
+    
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Strade Segrete Logo">
+                </a>
+                
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="destinazioni.html">Destinazioni</a></li>
+                        <li><a href="tour.html" class="active">Tour</a></li>
+                        <li><a href="sapori.html">Sapori del Nord</a></li>
+                        <li><a href="tour-personalizzato.html">Tour Personalizzato</a></li>
+                        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="tour-personalizzato.html" class="btn btn-primary hide-mobile">Crea il Tuo Tour</a>
+                
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="nav-mobile">
+                    <ul>
+                        <li><a href="destinazioni.html">Destinazioni</a></li>
+                        <li><a href="tour.html" class="active">Tour</a></li>
+                        <li><a href="sapori.html">Sapori del Nord</a></li>
+                        <li><a href="tour-personalizzato.html">Tour Personalizzato</a></li>
+                        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('images/tour-header-bg.jpg');">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 id="main-content">Tour in Bici nel Nord Italia</h1>
+                <p>Scopri i nostri percorsi esclusivi tra paesaggi mozzafiato e sapori autentici</p>
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li aria-current="page">Tour</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tour Filters -->
+    <section class="tour-filters section-sm bg-light">
+        <div class="container">
+            <div class="filters-container">
+                <h2 class="filters-title">Trova il Tour Perfetto</h2>
+                
+                <div class="filters-body">
+                    <div class="filter-group">
+                        <label for="region-filter">Regione</label>
+                        <select id="region-filter" class="filter-select">
+                            <option value="all">Tutte le regioni</option>
+                            <option value="dolomiti">Dolomiti</option>
+                            <option value="laghi">Laghi del Nord</option>
+                            <option value="piemonte">Piemonte</option>
+                            <option value="veneto">Veneto</option>
+                            <option value="trentino">Trentino-Alto Adige</option>
+                            <option value="lombardia">Lombardia</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="difficulty-filter">Difficoltà</label>
+                        <select id="difficulty-filter" class="filter-select">
+                            <option value="all">Tutte le difficoltà</option>
+                            <option value="facile">Facile</option>
+                            <option value="facile-intermedio">Facile-Intermedio</option>
+                            <option value="intermedio">Intermedio</option>
+                            <option value="intermedio-avanzato">Intermedio-Avanzato</option>
+                            <option value="avanzato">Avanzato</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="duration-filter">Durata</label>
+                        <select id="duration-filter" class="filter-select">
+                            <option value="all">Tutte le durate</option>
+                            <option value="weekend">Weekend (2-3 giorni)</option>
+                            <option value="settimana">Settimana (4-7 giorni)</option>
+                            <option value="lungo">Tour lungo (8+ giorni)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="bike-filter">Tipo di Bici</label>
+                        <select id="bike-filter" class="filter-select">
+                            <option value="all">Tutti i tipi</option>
+                            <option value="road">Bici da Corsa</option>
+                            <option value="gravel">Gravel</option>
+                            <option value="ebike">E-Bike</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="theme-filter">Tema</label>
+                        <select id="theme-filter" class="filter-select">
+                            <option value="all">Tutti i temi</option>
+                            <option value="gastronomia">Gastronomia</option>
+                            <option value="natura">Natura & Paesaggi</option>
+                            <option value="cultura">Cultura & Storia</option>
+                            <option value="vini">Vini & Degustazioni</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-actions">
+                        <button id="filter-reset" class="btn-tertiary">Azzera Filtri</button>
+                        <button id="filter-apply" class="btn-primary">Applica Filtri</button>
+                    </div>
+                </div>
+                
+                <div class="view-options">
+                    <div class="results-count">
+                        <span id="tours-count">12</span> tour trovati
+                    </div>
+                    <div class="display-options">
+                        <button class="view-btn active" data-view="grid" aria-label="Vista griglia">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button class="view-btn" data-view="list" aria-label="Vista lista">
+                            <i class="fas fa-list"></i>
+                        </button>
+                        <select id="sort-select" class="sort-select" aria-label="Ordina per">
+                            <option value="popular">Più popolari</option>
+                            <option value="price-asc">Prezzo (crescente)</option>
+                            <option value="price-desc">Prezzo (decrescente)</option>
+                            <option value="duration">Durata</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tours Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="tours-grid grid grid-3" id="tours-container">
+                <!-- Tour Card 1 -->
+                <div class="tour-card animate-on-scroll" data-region="dolomiti" data-difficulty="intermedio" data-duration="settimana" data-bike="gravel" data-theme="gastronomia,natura">
+                    <div class="tour-card-image">
+                        <img src="images/tour-dolomiti.jpg" alt="Tour delle Dolomiti" loading="lazy">
+                        <div class="tour-difficulty">Intermedio</div>
+                        <div class="tour-badge popular">Più Richiesto</div>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-region">Dolomiti</div>
+                        <h3>Tra le Vette delle Dolomiti</h3>
+                        <p>Un viaggio indimenticabile attraverso paesaggi UNESCO, con soste gastronomiche in rifugi tipici.</p>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item">
+                                <i class="fas fa-calendar"></i> 7 giorni
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-road"></i> 350 km
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-mountain"></i> 5200 m
+                            </div>
+                        </div>
+                        <div class="tour-highlights">
+                            <span class="highlight-tag">Gravel</span>
+                            <span class="highlight-tag">Gastronomia</span>
+                            <span class="highlight-tag">Paesaggi</span>
+                        </div>
+                    </div>
+                    <div class="tour-card-footer">
+                        <div class="tour-price">
+                            €1,890 <span>per persona</span>
+                        </div>
+                        <a href="tour/dolomiti-unesco.html" class="btn btn-tertiary">Scopri di più</a>
+                    </div>
+                </div>
+                
+                <!-- Tour Card 2 -->
+                <div class="tour-card animate-on-scroll" data-region="laghi" data-difficulty="facile-intermedio" data-duration="settimana" data-bike="road" data-theme="natura,vini">
+                    <div class="tour-card-image">
+                        <img src="images/tour-laghi.jpg" alt="Tour dei Laghi" loading="lazy">
+                        <div class="tour-difficulty">Facile-Intermedio</div>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-region">Laghi del Nord</div>
+                        <h3>Giro dei Laghi Lombardi</h3>
+                        <p>Un percorso panoramico tra i laghi di Como, Iseo e Garda, con degustazioni di pesce di lago e vini locali.</p>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item">
+                                <i class="fas fa-calendar"></i> 6 giorni
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-road"></i> 320 km
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-mountain"></i> 3800 m
+                            </div>
+                        </div>
+                        <div class="tour-highlights">
+                            <span class="highlight-tag">Road Bike</span>
+                            <span class="highlight-tag">Laghi</span>
+                            <span class="highlight-tag">Vini</span>
+                        </div>
+                    </div>
+                    <div class="tour-card-footer">
+                        <div class="tour-price">
+                            €1,690 <span>per persona</span>
+                        </div>
+                        <a href="tour/giro-laghi.html" class="btn btn-tertiary">Scopri di più</a>
+                    </div>
+                </div>
+                
+                <!-- Tour Card 3 -->
+                <div class="tour-card animate-on-scroll" data-region="piemonte" data-difficulty="intermedio" data-duration="settimana" data-bike="gravel" data-theme="gastronomia,vini">
+                    <div class="tour-card-image">
+                        <img src="images/tour-piemonte.jpg" alt="Tour del Piemonte" loading="lazy">
+                        <div class="tour-difficulty">Intermedio</div>
+                        <div class="tour-badge new">Novità</div>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-region">Piemonte</div>
+                        <h3>Langhe e Tartufi del Piemonte</h3>
+                        <p>Un percorso enogastronomico tra le colline del Barolo e del tartufo, su strade secondarie immerse nei vigneti.</p>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item">
+                                <i class="fas fa-calendar"></i> 5 giorni
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-road"></i> 280 km
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-mountain"></i> 3200 m
+                            </div>
+                        </div>
+                        <div class="tour-highlights">
+                            <span class="highlight-tag">Gravel</span>
+                            <span class="highlight-tag">Enogastronomia</span>
+                            <span class="highlight-tag">Colline</span>
+                        </div>
+                    </div>
+                    <div class="tour-card-footer">
+                        <div class="tour-price">
+                            €1,790 <span>per persona</span>
+                        </div>
+                        <a href="tour/langhe-tartufi.html" class="btn btn-tertiary">Scopri di più</a>
+                    </div>
+                </div>
+                
+                <!-- Tour Card 4 -->
+                <div class="tour-card animate-on-scroll" data-region="veneto" data-difficulty="facile" data-duration="weekend" data-bike="ebike" data-theme="cultura,vini">
+                    <div class="tour-card-image">
+                        <img src="images/tour-veneto.jpg" alt="Tour del Veneto" loading="lazy">
+                        <div class="tour-difficulty">Facile</div>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-region">Veneto</div>
+                        <h3>Colline del Prosecco</h3>
+                        <p>Un weekend tra le colline UNESCO del Prosecco, con degustazioni nelle migliori cantine e visite a borghi medievali.</p>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item">
+                                <i class="fas fa-calendar"></i> 3 giorni
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-road"></i> 120 km
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-mountain"></i> 1800 m
+                            </div>
+                        </div>
+                        <div class="tour-highlights">
+                            <span class="highlight-tag">E-Bike</span>
+                            <span class="highlight-tag">Vini</span>
+                            <span class="highlight-tag">Cultura</span>
+                        </div>
+                    </div>
+                    <div class="tour-card-footer">
+                        <div class="tour-price">
+                            €890 <span>per persona</span>
+                        </div>
+                        <a href="tour/colline-prosecco.html" class="btn btn-tertiary">Scopri di più</a>
+                    </div>
+                </div>
+                
+                <!-- Tour Card 5 -->
+                <div class="tour-card animate-on-scroll" data-region="trentino" data-difficulty="intermedio-avanzato" data-duration="settimana" data-bike="road" data-theme="natura,gastronomia">
+                    <div class="tour-card-image">
+                        <img src="images/tour-trentino.jpg" alt="Tour del Trentino" loading="lazy">
+                        <div class="tour-difficulty">Intermedio-Avanzato</div>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-region">Trentino-Alto Adige</div>
+                        <h3>Passi Alpini del Trentino</h3>
+                        <p>Un tour impegnativo attraverso i passi più iconici del Trentino, con soste in malghe tradizionali e ristoranti stellati.</p>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item">
+                                <i class="fas fa-calendar"></i> 6 giorni
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-road"></i> 380 km
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-mountain"></i> 7500 m
+                            </div>
+                        </div>
+                        <div class="tour-highlights">
+                            <span class="highlight-tag">Road Bike</span>
+                            <span class="highlight-tag">Montagna</span>
+                            <span class="highlight-tag">Gastronomia</span>
+                        </div>
+                    </div>
+                    <div class="tour-card-footer">
+                        <div class="tour-price">
+                            €1,990 <span>per persona</span>
+                        </div>
+                        <a href="tour/passi-trentino.html" class="btn btn-tertiary">Scopri di più</a>
+                    </div>
+                </div>
+                
+                <!-- Tour Card 6 -->
+                <div class="tour-card animate-on-scroll" data-region="lombardia" data-difficulty="intermedio" data-duration="weekend" data-bike="gravel" data-theme="cultura,gastronomia">
+                    <div class="tour-card-image">
+                        <img src="images/tour-lombardia.jpg" alt="Tour della Lombardia" loading="lazy">
+                        <div class="tour-difficulty">Intermedio</div>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-region">Lombardia</div>
+                        <h3>Tra Risaie e Castelli</h3>
+                        <p>Un weekend in gravel attraverso le risaie della Lomellina e i castelli medievali, con degustazioni di risotti e formaggi locali.</p>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item">
+                                <i class="fas fa-calendar"></i> 3 giorni
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-road"></i> 150 km
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-mountain"></i> 800 m
+                            </div>
+                        </div>
+                        <div class="tour-highlights">
+                            <span class="highlight-tag">Gravel</span>
+                            <span class="highlight-tag">Cultura</span>
+                            <span class="highlight-tag">Gastronomia</span>
+                        </div>
+                    </div>
+                    <div class="tour-card-footer">
+                        <div class="tour-price">
+                            €790 <span>per persona</span>
+                        </div>
+                        <a href="tour/risaie-castelli.html" class="btn btn-tertiary">Scopri di più</a>
+                    </div>
+                </div>
+                
+                <!-- Additional Tour Cards -->
+                <!-- Tour Card 7 -->
+                <div class="tour-card animate-on-scroll" data-region="dolomiti" data-difficulty="avanzato" data-duration="lungo" data-bike="road" data-theme="natura">
+                    <div class="tour-card-image">
+                        <img src="images/tour-dolomiti-epic.jpg" alt="Epic Dolomites" loading="lazy">
+                        <div class="tour-difficulty">Avanzato</div>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-region">Dolomiti</div>
+                        <h3>Epic Dolomites</h3>
+                        <p>Un tour epico che affronta tutti i passi più leggendari delle Dolomiti, per ciclisti esperti alla ricerca della sfida definitiva.</p>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item">
+                                <i class="fas fa-calendar"></i> 9 giorni
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-road"></i> 550 km
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-mountain"></i> 12000 m
+                            </div>
+                        </div>
+                        <div class="tour-highlights">
+                            <span class="highlight-tag">Road Bike</span>
+                            <span class="highlight-tag">Sfida</span>
+                            <span class="highlight-tag">Paesaggi</span>
+                        </div>
+                    </div>
+                    <div class="tour-card-footer">
+                        <div class="tour-price">
+                            €2,490 <span>per persona</span>
+                        </div>
+                        <a href="tour/epic-dolomites.html" class="btn btn-tertiary">Scopri di più</a>
+                    </div>
+                </div>
+                
+                <!-- Tour Card 8 -->
+                <div class="tour-card animate-on-scroll" data-region="piemonte" data-difficulty="facile" data-duration="weekend" data-bike="ebike" data-theme="vini,gastronomia">
+                    <div class="tour-card-image">
+                        <img src="images/tour-piemonte-ebike.jpg" alt="Weekend Enogastronomico in Piemonte" loading="lazy">
+                        <div class="tour-difficulty">Facile</div>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-region">Piemonte</div>
+                        <h3>Weekend Enogastronomico</h3>
+                        <p>Un weekend in e-bike dedicato alle eccellenze enogastronomiche del Piemonte, con degustazioni di vini, tartufi e nocciole.</p>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item">
+                                <i class="fas fa-calendar"></i> 3 giorni
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-road"></i> 100 km
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-mountain"></i> 1200 m
+                            </div>
+                        </div>
+                        <div class="tour-highlights">
+                            <span class="highlight-tag">E-Bike</span>
+                            <span class="highlight-tag">Vini</span>
+                            <span class="highlight-tag">Gastronomia</span>
+                        </div>
+                    </div>
+                    <div class="tour-card-footer">
+                        <div class="tour-price">
+                            €890 <span>per persona</span>
+                        </div>
+                        <a href="tour/weekend-enogastronomico.html" class="btn btn-tertiary">Scopri di più</a>
+                    </div>
+                </div>
+                
+                <!-- Tour Card 9 -->
+                <div class="tour-card animate-on-scroll" data-region="veneto,trentino" data-difficulty="intermedio" data-duration="settimana" data-bike="gravel" data-theme="natura,cultura">
+                    <div class="tour-card-image">
+                        <img src="images/tour-veneto-trentino.jpg" alt="Da Venezia alle Dolomiti" loading="lazy">
+                        <div class="tour-difficulty">Intermedio</div>
+                    </div>
+                    <div class="tour-card-content">
+                        <div class="tour-region">Veneto / Trentino</div>
+                        <h3>Da Venezia alle Dolomiti</h3>
+                        <p>Un viaggio straordinario dalla laguna di Venezia fino alle vette delle Dolomiti, attraversando città d'arte, vigneti e montagne.</p>
+                        <div class="tour-meta">
+                            <div class="tour-meta-item">
+                                <i class="fas fa-calendar"></i> 7 giorni
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-road"></i> 400 km
+                            </div>
+                            <div class="tour-meta-item">
+                                <i class="fas fa-mountain"></i> 4800 m
+                            </div>
+                        </div>
+                        <div class="tour-highlights">
+                            <span class="highlight-tag">Gravel</span>
+                            <span class="highlight-tag">Cultura</span>
+                            <span class="highlight-tag">Natura</span>
+                        </div>
+                    </div>
+                    <div class="tour-card-footer">
+                        <div class="tour-price">
+                            €1,990 <span>per persona</span>
+                        </div>
+                        <a href="tour/venezia-dolomiti.html" class="btn btn-tertiary">Scopri di più</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- No Results Message -->
+            <div id="no-results" class="no-results" style="display: none;">
+                <div class="no-results-content">
+                    <i class="fas fa-search"></i>
+                    <h3>Nessun tour trovato</h3>
+                    <p>Prova a modificare i filtri di ricerca per trovare il tour perfetto per te.</p>
+                    <button id="reset-filters" class="btn btn-primary">Azzera tutti i filtri</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Custom Tour CTA -->
+    <section class="cta-section" style="background-image: url('images/custom-tour-bg.jpg');">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Non hai trovato il tour perfetto per te?</h2>
+                <p>Crea un tour personalizzato in base alle tue preferenze, livello di esperienza e interessi. I nostri esperti locali progetteranno un'esperienza su misura per te nel Nord Italia.</p>
+                <a href="tour-personalizzato.html" class="btn btn-primary btn-lg">Crea il Tuo Tour</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Domande Frequenti</h2>
+                <p>Tutto quello che devi sapere sui nostri tour in bici nel Nord Italia</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Che tipo di bici è consigliata per i vostri tour?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Per la maggior parte dei nostri tour nel Nord Italia, consigliamo bici da corsa o gravel, a seconda del percorso specifico. I tour su strada sono ideali per bici da corsa, mentre i percorsi che includono strade bianche o sterrati leggeri sono perfetti per gravel bike. Offriamo anche tour specifici per e-bike, ideali per chi desidera affrontare percorsi più impegnativi con minor sforzo o per gruppi con diversi livelli di preparazione. Nella descrizione di ogni tour troverai indicazioni specifiche sul tipo di bici consigliato.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        È possibile noleggiare le bici per i tour?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sì, offriamo servizio di noleggio bici di alta qualità per tutti i nostri tour nel Nord Italia. Disponiamo di bici da corsa in carbonio, gravel bike e e-bike di marchi premium come Pinarello, Bianchi e Specialized, in diverse taglie. Il noleggio include casco, borraccia, kit di riparazione e, su richiesta, pedali con sistema di aggancio specifico. Ti consigliamo di prenotare la bici con almeno 2 settimane di anticipo, specificando la tua altezza e le tue preferenze.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Come funziona il trasporto bagagli durante il tour?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Per tutti i nostri tour nel Nord Italia, offriamo il servizio di trasporto bagagli da un alloggio all'altro. Ogni mattina, dovrai semplicemente lasciare la tua valigia nella reception dell'hotel e la troverai già nella tua camera quando arriverai alla tappa successiva. Ti consigliamo di portare con te durante la pedalata solo l'essenziale (giacca antivento, snack, telefono, documenti) in una piccola borsa da manubrio o da sella, che forniamo su richiesta.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Qual è il livello di difficoltà dei tour?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I nostri tour nel Nord Italia sono classificati in cinque livelli di difficoltà:</p>
+                        <ul>
+                            <li><strong>Facile:</strong> Percorsi prevalentemente pianeggianti o con leggere ondulazioni, adatti a tutti (30-50 km al giorno, dislivello fino a 300m).</li>
+                            <li><strong>Facile-Intermedio:</strong> Percorsi con alcune salite moderate, adatti a ciclisti con un minimo di esperienza (40-70 km al giorno, dislivello 300-800m).</li>
+                            <li><strong>Intermedio:</strong> Percorsi con salite regolari, adatti a ciclisti abituati a pedalare regolarmente (50-80 km al giorno, dislivello 800-1500m).</li>
+                            <li><strong>Intermedio-Avanzato:</strong> Percorsi impegnativi con salite significative, adatti a ciclisti allenati (60-100 km al giorno, dislivello 1500-2500m).</li>
+                            <li><strong>Avanzato:</strong> Percorsi molto impegnativi con salite lunghe e ripide, adatti a ciclisti molto allenati (80-120 km al giorno, dislivello oltre 2500m).</li>
+                        </ul>
+                        <p>Nella descrizione di ogni tour troverai informazioni dettagliate su distanza giornaliera, dislivello e difficoltà tecnica.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Cosa succede in caso di maltempo?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>In caso di condizioni meteorologiche avverse durante i tour nel Nord Italia, adottiamo diverse soluzioni in base alla gravità della situazione:</p>
+                        <ul>
+                            <li>Per pioggia leggera o temporanea, forniamo equipaggiamento impermeabile e possiamo modificare leggermente l'orario di partenza.</li>
+                            <li>In caso di temporali o condizioni pericolose, possiamo modificare il percorso scegliendo alternative più sicure o riducendo la distanza.</li>
+                            <li>Per condizioni estreme, offriamo trasporto in veicolo fino alla tappa successiva e organizziamo attività alternative come visite culturali o esperienze gastronomiche.</li>
+                        </ul>
+                        <p>La sicurezza è sempre la nostra priorità e le guide locali sono esperte nel prendere le decisioni migliori in base alle condizioni specifiche.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-lg">
+                <a href="faq.html" class="btn btn-tertiary">Vedi tutte le FAQ</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h3>Resta Aggiornato</h3>
+            <p>Iscriviti alla nostra newsletter per ricevere itinerari esclusivi, consigli e offerte speciali sui tour in bici nel Nord Italia.</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Il tuo indirizzo email" required aria-label="Indirizzo email">
+                <button type="submit" class="newsletter-btn">Iscriviti</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <img src="images/logo-white.png" alt="Strade Segrete" class="footer-logo">
+                    <p>Tour guidati in bici da corsa e gravel alla scoperta delle strade meno conosciute del Nord Italia e delle autentiche tradizioni gastronomiche locali.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Strava"><i class="fab fa-strava"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Tour</h4>
+                    <ul>
+                        <li><a href="tour.html">Tutti i Tour</a></li>
+                        <li><a href="destinazioni/dolomiti.html">Dolomiti</a></li>
+                        <li><a href="destinazioni/laghi.html">Laghi del Nord</a></li>
+                        <li><a href="destinazioni/piemonte.html">Piemonte</a></li>
+                        <li><a href="tour-personalizzato.html">Tour Personalizzati</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Informazioni</h4>
+                    <ul>
+                        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="termini.html">Termini e Condizioni</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="cookie.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contattaci</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Via del Ciclismo 123, Milano</li>
+                        <li><i class="fas fa-phone"></i> +39 02 1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@stradesegrete.it</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 Strade Segrete. Tutti i diritti riservati.
+                </div>
+                <div>
+                    <img src="images/payment-methods.png" alt="Metodi di pagamento accettati" height="30">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Floating CTA -->
+    <div class="cta-floating" id="floatingCTA">
+        <div class="cta-content">
+            <div class="cta-text">
+                <h3>Pronto a Scoprire il Nord Italia?</h3>
+                <p>Tour personalizzati con guide esperte</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="tour-personalizzato.html" class="btn btn-primary">Crea il Tuo Tour</a>
+            </div>
+        </div>
+        <button class="cta-close" aria-label="Chiudi">&times;</button>
+    </div>
+    
+    <!-- Tour Filters JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tour filtering functionality
+            const filterApplyBtn = document.getElementById('filter-apply');
+            const filterResetBtn = document.getElementById('filter-reset');
+            const resetFiltersBtn = document.getElementById('reset-filters');
+            const tourCards = document.querySelectorAll('.tour-card');
+            const toursContainer = document.getElementById('tours-container');
+            const noResults = document.getElementById('no-results');
+            const toursCount = document.getElementById('tours-count');
+            
+            // View toggle functionality
+            const viewBtns = document.querySelectorAll('.view-btn');
+            const sortSelect = document.getElementById('sort-select');
+            
+            // FAQ functionality
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            // Apply filters
+            filterApplyBtn.addEventListener('click', applyFilters);
+            
+            // Reset filters
+            filterResetBtn.addEventListener('click', resetFilters);
+            if (resetFiltersBtn) {
+                resetFiltersBtn.addEventListener('click', resetFilters);
+            }
+            
+            // View toggle
+            viewBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    viewBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const viewType = this.getAttribute('data-view');
+                    if (viewType === 'grid') {
+                        toursContainer.classList.remove('list-view');
+                    } else {
+                        toursContainer.classList.add('list-view');
+                    }
+                });
+            });
+            
+            // Sort functionality
+            sortSelect.addEventListener('change', function() {
+                const sortValue = this.value;
+                const tourCardsArray = Array.from(tourCards);
+                
+                tourCardsArray.sort((a, b) => {
+                    if (sortValue === 'popular') {
+                        // Sort by popularity (presence of "popular" badge)
+                        const aPopular = a.querySelector('.tour-badge.popular') !== null;
+                        const bPopular = b.querySelector('.tour-badge.popular') !== null;
+                        return bPopular - aPopular;
+                    } else if (sortValue === 'price-asc') {
+                        // Sort by price (ascending)
+                        const aPrice = parseInt(a.querySelector('.tour-price').textContent.replace(/[^0-9]/g, ''));
+                        const bPrice = parseInt(b.querySelector('.tour-price').textContent.replace(/[^0-9]/g, ''));
+                        return aPrice - bPrice;
+                    } else if (sortValue === 'price-desc') {
+                        // Sort by price (descending)
+                        const aPrice = parseInt(a.querySelector('.tour-price').textContent.replace(/[^0-9]/g, ''));
+                        const bPrice = parseInt(b.querySelector('.tour-price').textContent.replace(/[^0-9]/g, ''));
+                        return bPrice - aPrice;
+                    } else if (sortValue === 'duration') {
+                        // Sort by duration (days)
+                        const aDuration = parseInt(a.querySelector('.tour-meta-item:first-child').textContent.replace(/[^0-9]/g, ''));
+                        const bDuration = parseInt(b.querySelector('.tour-meta-item:first-child').textContent.replace(/[^0-9]/g, ''));
+                        return bDuration - aDuration;
+                    }
+                    return 0;
+                });
+                
+                // Remove all tour cards
+                tourCardsArray.forEach(card => card.remove());
+                
+                // Append sorted cards
+                tourCardsArray.forEach(card => toursContainer.appendChild(card));
+            });
+            
+            // FAQ functionality
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    
+                    // Toggle current FAQ item
+                    this.setAttribute('aria-expanded', !isExpanded);
+                    answer.style.maxHeight = isExpanded ? null : answer.scrollHeight + 'px';
+                    
+                    // Close other FAQ items
+                    faqQuestions.forEach(q => {
+                        if (q !== this && q.getAttribute('aria-expanded') === 'true') {
+                            q.setAttribute('aria-expanded', 'false');
+                            q.nextElementSibling.style.maxHeight = null;
+                        }
+                    });
+                });
+            });
+            
+            function applyFilters() {
+                const regionFilter = document.getElementById('region-filter').value;
+                const difficultyFilter = document.getElementById('difficulty-filter').value;
+                const durationFilter = document.getElementById('duration-filter').value;
+                const bikeFilter = document.getElementById('bike-filter').value;
+                const themeFilter = document.getElementById('theme-filter').value;
+                
+                let visibleCount = 0;
+                
+                tourCards.forEach(card => {
+                    const cardRegion = card.getAttribute('data-region');
+                    const cardDifficulty = card.getAttribute('data-difficulty');
+                    const cardDuration = card.getAttribute('data-duration');
+                    const cardBike = card.getAttribute('data-bike');
+                    const cardTheme = card.getAttribute('data-theme');
+                    
+                    let isVisible = true;
+                    
+                    if (regionFilter !== 'all' && !cardRegion.includes(regionFilter)) {
+                        isVisible = false;
+                    }
+                    
+                    if (difficultyFilter !== 'all' && cardDifficulty !== difficultyFilter) {
+                        isVisible = false;
+                    }
+                    
+                    if (durationFilter !== 'all' && cardDuration !== durationFilter) {
+                        isVisible = false;
+                    }
+                    
+                    if (bikeFilter !== 'all' && cardBike !== bikeFilter) {
+                        isVisible = false;
+                    }
+                    
+                    if (themeFilter !== 'all' && !cardTheme.includes(themeFilter)) {
+                        isVisible = false;
+                    }
+                    
+                    if (isVisible) {
+                        card.style.display = '';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                // Update count and show/hide no results message
+                toursCount.textContent = visibleCount;
+                if (visibleCount === 0) {
+                    noResults.style.display = 'block';
+                } else {
+                    noResults.style.display = 'none';
+                }
+            }
+            
+            function resetFilters() {
+                document.getElementById('region-filter').value = 'all';
+                document.getElementById('difficulty-filter').value = 'all';
+                document.getElementById('duration-filter').value = 'all';
+                document.getElementById('bike-filter').value = 'all';
+                document.getElementById('theme-filter').value = 'all';
+                
+                tourCards.forEach(card => {
+                    card.style.display = '';
+                });
+                
+                toursCount.textContent = tourCards.length;
+                noResults.style.display = 'none';
+            }
+        });
+    </script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

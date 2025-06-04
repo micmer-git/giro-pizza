@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti | Strade Segrete | Tour in Bici a Bergamo</title>
+  <meta name="description" content="Contattaci per organizzare il tuo tour in bici personalizzato a Bergamo e dintorni. Compila il form per ricevere informazioni sui nostri percorsi esclusivi.">
+  
+  <!-- Preconnect per Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Open+Sans:wght@300;400&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  
+  <!-- CSS Principale -->
+  <link rel="stylesheet" href="css/fixed-styles.css">
+</head>
+<body>
+  <nav class="minimal-nav">
+    <a href="index.html" class="nav-button">HOME</a>
+    <a href="contatti.html" class="nav-button active">CONTATTI</a>
+    <a href="chi-siamo.html" class="nav-button">CHI SIAMO</a>
+  </nav>
+  
+  <div class="language-selector">
+    <a href="contatti.html" class="lang-button active">IT</a>
+    <a href="en/contact.html" class="lang-button">EN</a>
+  </div>
+  
+  <div class="fullpage-container">
+    <section class="fullpage-section" id="contact-hero">
+      <div class="background" style="background-image: url('https://images.unsplash.com/photo-1528834342297-fdefb9a5a92b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
+      <div class="content">
+        <h1 class="fade-in">CONTATTI</h1>
+        <p class="quote fade-in delay-1">Pianifica il tuo prossimo tour su due ruote</p>
+      </div>
+      <div class="scroll-indicator"></div>
+    </section>
+    
+    <section class="fullpage-section" id="contact-form">
+      <div class="background gradient"></div>
+      <div class="content">
+        <h2 class="fade-in">RICHIEDI INFORMAZIONI</h2>
+        <p class="description fade-in delay-1">Compila il form sottostante per ricevere informazioni personalizzate sui nostri tour o per organizzare un'esperienza su misura per te.</p>
+        
+        <form class="contact-form fade-in delay-2">
+          <div class="form-group">
+            <label for="name" class="form-label">Nome e Cognome</label>
+            <input type="text" id="name" class="form-input" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-input" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone" class="form-label">Telefono</label>
+            <input type="tel" id="phone" class="form-input">
+          </div>
+          
+          <div class="form-group">
+            <label for="tour-type" class="form-label">Tipo di Tour</label>
+            <select id="tour-type" class="form-select form-input">
+              <option value="">Seleziona un'opzione</option>
+              <option value="colline">Tour delle Colline</option>
+              <option value="citta-alta">Città Alta e Dintorni</option>
+              <option value="valli">Valli Bergamasche</option>
+              <option value="enogastronomico">Tour Enogastronomico</option>
+              <option value="personalizzato">Tour Personalizzato</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="participants" class="form-label">Numero di Partecipanti</label>
+            <select id="participants" class="form-select form-input">
+              <option value="1">1 persona</option>
+              <option value="2">2 persone</option>
+              <option value="3-5">3-5 persone</option>
+              <option value="6-10">6-10 persone</option>
+              <option value="10+">Più di 10 persone</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Messaggio</label>
+            <textarea id="message" class="form-input form-textarea" placeholder="Raccontaci le tue esigenze, il tuo livello di esperienza e qualsiasi altra informazione utile..."></textarea>
+          </div>
+          
+          <button type="submit" class="minimal-button">INVIA RICHIESTA</button>
+        </form>
+      </div>
+    </section>
+    
+    <section class="fullpage-section" id="direct-contact">
+      <div class="background" style="background-image: url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
+      <div class="content">
+        <h2 class="fade-in">CONTATTACI DIRETTAMENTE</h2>
+        <p class="description fade-in delay-1">Preferisci parlare direttamente con noi? Ecco come puoi raggiungerci:</p>
+        
+        <div class="contact-info">
+          <div class="contact-item fade-in delay-2">
+            <div class="contact-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <a href="tel:+393451234567" class="contact-link">+39 345 123 4567</a>
+            </div>
+          </div>
+          
+          <div class="contact-item fade-in delay-2">
+            <div class="contact-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <a href="mailto:info@stradesegrete.it" class="contact-link">info@stradesegrete.it</a>
+            </div>
+          </div>
+          
+          <div class="contact-item fade-in delay-2">
+            <div class="contact-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="contact-text">
+              Via Roma 123<br>
+              24121 Bergamo, Italia
+            </div>
+          </div>
+        </div>
+        
+        <div class="social-links fade-in delay-3" style="margin-top: 2rem; display: flex; gap: 1.5rem;">
+          <a href="#" class="contact-link" style="font-size: 1.5rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#" class="contact-link" style="font-size: 1.5rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="contact-link" style="font-size: 1.5rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a href="#" class="contact-link" style="font-size: 1.5rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('.fullpage-section');
+      const container = document.querySelector('.fullpage-container');
+      
+      // Inizializza la prima sezione come attiva
+      sections[0].classList.add('active');
+      
+      // Funzione per gestire l'intersezione delle sezioni
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Rimuovi la classe active da tutte le sezioni
+            sections.forEach(section => section.classList.remove('active'));
+            
+            // Aggiungi la classe active alla sezione corrente
+            entry.target.classList.add('active');
+          }
+        });
+      }, { threshold: 0.5 });
+      
+      // Osserva tutte le sezioni
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+      
+      // Gestione del form
+      const form = document.querySelector('.contact-form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          // Qui andrebbe l'invio del form, per ora solo un alert
+          alert('Grazie per averci contattato! Ti risponderemo al più presto.');
+          form.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

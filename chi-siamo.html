@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Siamo | Strade Segrete | Tour in Bici a Bergamo</title>
+  <meta name="description" content="Scopri chi siamo e la nostra passione per il ciclismo a Bergamo. Anni di esperienza, chilometri percorsi e conoscenza del territorio per offrirti tour unici.">
+  
+  <!-- Preconnect per Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Open+Sans:wght@300;400&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  
+  <!-- CSS Principale -->
+  <link rel="stylesheet" href="css/fixed-styles.css">
+  <link rel="stylesheet" href="css/strava-integration.css">
+  
+  <!-- Leaflet CSS per le mappe -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+  <nav class="minimal-nav">
+    <a href="index.html" class="nav-button">HOME</a>
+    <a href="contatti.html" class="nav-button">CONTATTI</a>
+    <a href="chi-siamo.html" class="nav-button active">CHI SIAMO</a>
+  </nav>
+  
+  <div class="language-selector">
+    <a href="chi-siamo.html" class="lang-button active">IT</a>
+    <a href="en/about-us.html" class="lang-button">EN</a>
+  </div>
+  
+  <div class="fullpage-container">
+    <section class="fullpage-section" id="about-hero">
+      <div class="background" style="background-image: url('https://images.unsplash.com/photo-1541625602330-2277a4c46182?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
+      <div class="content">
+        <h1 class="fade-in">CHI SIAMO</h1>
+        <p class="quote fade-in delay-1">La passione per la bici e l'amore per il territorio bergamasco</p>
+      </div>
+      <div class="scroll-indicator"></div>
+    </section>
+    
+    <section class="fullpage-section" id="bio">
+      <div class="background gradient"></div>
+      <div class="content">
+        <div class="bio-container">
+          <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Fondatore di Strade Segrete" class="bio-image fade-in">
+          <div class="bio-content">
+            <h2 class="fade-in">MARCO BIANCHI</h2>
+            <p class="fade-in delay-1">Nato e cresciuto tra le colline bergamasche, ho trasformato la mia passione per il ciclismo in una missione: far scoprire agli appassionati le strade meno conosciute della mia terra.</p>
+            <p class="fade-in delay-2">Da oltre 15 anni esploro ogni angolo della provincia di Bergamo in sella alla mia bici, mappando percorsi, scoprendo panorami mozzafiato e selezionando le migliori esperienze gastronomiche locali.</p>
+            <p class="fade-in delay-3">Con Strade Segrete voglio condividere questa conoscenza, offrendo tour personalizzati che combinano sport, natura e cultura enogastronomica.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="fullpage-section" id="strava-stats">
+      <div class="background" style="background-image: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
+      <div class="content">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Strava_Logo.svg/2560px-Strava_Logo.svg.png" alt="Strava Logo" class="strava-logo fade-in">
+        <h2 class="fade-in delay-1">I NUMERI NON MENTONO</h2>
+        <div class="strava-stats">
+          <div class="strava-stat fade-in delay-2">
+            <span class="strava-stat-number" data-value="15">0</span>
+            <span class="strava-stat-label">Anni di esperienza</span>
+          </div>
+          <div class="strava-stat fade-in delay-2">
+            <span class="strava-stat-number" data-value="25000">0</span>
+            <span class="strava-stat-label">Km percorsi</span>
+          </div>
+          <div class="strava-stat fade-in delay-2">
+            <span class="strava-stat-number" data-value="350000">0</span>
+            <span class="strava-stat-label">Metri di dislivello</span>
+          </div>
+        </div>
+        <p class="description fade-in delay-3">Segui le mie attività su Strava per scoprire in anteprima i nuovi percorsi che esploro e che potrebbero diventare i prossimi tour di Strade Segrete.</p>
+        <a href="https://www.strava.com" target="_blank" class="minimal-button fade-in delay-4">SEGUIMI SU STRAVA</a>
+      </div>
+    </section>
+    
+    <section class="fullpage-section" id="gpx-maps">
+      <div class="background gradient"></div>
+      <div class="content" style="padding: 0; max-width: 100%;">
+        <div class="gpx-map-container">
+          <div class="map-carousel">
+            <!-- Mappa 1 -->
+            <div class="map-slide active">
+              <div class="map-container">
+                <div id="map1" class="map"></div>
+              </div>
+              <div class="map-info">
+                <h3 class="map-title fade-in">TOUR DELLE COLLINE</h3>
+                <p class="map-description fade-in delay-1">Un percorso panoramico attraverso le colline bergamasche, con viste mozzafiato e strade poco trafficate.</p>
+                <div class="map-stats">
+                  <div class="map-stat fade-in delay-2">
+                    <span class="map-stat-number">45 km</span>
+                    <span class="map-stat-label">Distanza</span>
+                  </div>
+                  <div class="map-stat fade-in delay-2">
+                    <span class="map-stat-number">850 m</span>
+                    <span class="map-stat-label">Dislivello</span>
+                  </div>
+                  <div class="map-stat fade-in delay-2">
+                    <span class="map-stat-number">3.5 h</span>
+                    <span class="map-stat-label">Durata</span>
+                  </div>
+                </div>
+                <a href="#" class="minimal-button fade-in delay-3">DETTAGLI</a>
+              </div>
+            </div>
+            
+            <!-- Mappa 2 -->
+            <div class="map-slide">
+              <div class="map-container">
+                <div id="map2" class="map"></div>
+              </div>
+              <div class="map-info">
+                <h3 class="map-title fade-in">CITTÀ ALTA E DINTORNI</h3>
+                <p class="map-description fade-in delay-1">Un tour che combina il fascino medievale di Città Alta con le strade panoramiche dei colli circostanti.</p>
+                <div class="map-stats">
+                  <div class="map-stat fade-in delay-2">
+                    <span class="map-stat-number">30 km</span>
+                    <span class="map-stat-label">Distanza</span>
+                  </div>
+                  <div class="map-stat fade-in delay-2">
+                    <span class="map-stat-number">600 m</span>
+                    <span class="map-stat-label">Dislivello</span>
+                  </div>
+                  <div class="map-stat fade-in delay-2">
+                    <span class="map-stat-number">2.5 h</span>
+                    <span class="map-stat-label">Durata</span>
+                  </div>
+                </div>
+                <a href="#" class="minimal-button fade-in delay-3">DETTAGLI</a>
+              </div>
+            </div>
+            
+            <!-- Mappa 3 -->
+            <div class="map-slide">
+              <div class="map-container">
+                <div id="map3" class="map"></div>
+              </div>
+              <div class="map-info">
+                <h3 class="map-title fade-in">VALLI BERGAMASCHE</h3>
+                <p class="map-description fade-in delay-1">Un'avventura attraverso le valli bergamasche, con salite impegnative e discese emozionanti.</p>
+                <div class="map-stats">
+                  <div class="map-stat fade-in delay-2">
+                    <span class="map-stat-number">65 km</span>
+                    <span class="map-stat-label">Distanza</span>
+                  </div>
+                  <div class="map-stat fade-in delay-2">
+                    <span class="map-stat-number">1200 m</span>
+                    <span class="map-stat-label">Dislivello</span>
+                  </div>
+                  <div class="map-stat fade-in delay-2">
+                    <span class="map-stat-number">5 h</span>
+                    <span class="map-stat-label">Durata</span>
+                  </div>
+                </div>
+                <a href="#" class="minimal-button fade-in delay-3">DETTAGLI</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="map-carousel-controls">
+            <span class="map-indicator active"></span>
+            <span class="map-indicator"></span>
+            <span class="map-indicator"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="fullpage-section" id="mixed-gallery">
+      <div class="background gradient"></div>
+      <div class="content" style="padding: 0; max-width: 100%;">
+        <div class="mixed-carousel">
+          <!-- Slide 1 -->
+          <div class="mixed-slide active">
+            <div class="mixed-content">
+              <h3 class="map-title fade-in">PAESAGGI MOZZAFIATO</h3>
+              <p class="map-description fade-in delay-1">I nostri tour ti porteranno attraverso alcuni dei paesaggi più spettacolari delle colline bergamasche, con viste panoramiche che si estendono fino alla pianura padana.</p>
+              <a href="#" class="minimal-button fade-in delay-2">SCOPRI I TOUR</a>
+            </div>
+            <div class="mixed-image" style="background-image: url('https://images.unsplash.com/photo-1501621667575-af81f1f0bacc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
+          </div>
+          
+          <!-- Slide 2 -->
+          <div class="mixed-slide">
+            <div class="mixed-content">
+              <h3 class="map-title fade-in">GASTRONOMIA LOCALE</h3>
+              <p class="map-description fade-in delay-1">Ogni tour include soste presso produttori locali, dove potrai degustare formaggi, salumi, vini e altre specialità bergamasche.</p>
+              <a href="#" class="minimal-button fade-in delay-2">TOUR ENOGASTRONOMICI</a>
+            </div>
+            <div class="mixed-image" style="background-image: url('https://images.unsplash.com/photo-1528834342297-fdefb9a5a92b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
+          </div>
+          
+          <!-- Slide 3 -->
+          <div class="mixed-slide">
+            <div class="mixed-content">
+              <h3 class="map-title fade-in">STRADE POCO CONOSCIUTE</h3>
+              <p class="map-description fade-in delay-1">Scopri percorsi lontani dal turismo di massa, strade secondarie e sentieri che solo i locali conoscono, per un'esperienza autentica e unica.</p>
+              <a href="#" class="minimal-button fade-in delay-2">ESPLORA</a>
+            </div>
+            <div class="mixed-image" style="background-image: url('https://images.unsplash.com/photo-1506535995048-638aa1b62b77?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
+          </div>
+        </div>
+        
+        <div class="map-carousel-controls" style="bottom: 1rem;">
+          <span class="map-indicator active"></span>
+          <span class="map-indicator"></span>
+          <span class="map-indicator"></span>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- Leaflet JS per le mappe -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('.fullpage-section');
+      const container = document.querySelector('.fullpage-container');
+      
+      // Inizializza la prima sezione come attiva
+      sections[0].classList.add('active');
+      
+      // Funzione per animare i numeri
+      function animateValue(obj, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          obj.innerHTML = Math.floor(progress * (end - start) + start);
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          }
+        };
+        window.requestAnimationFrame(step);
+      }
+      
+      // Funzione per gestire l'intersezione delle sezioni
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Rimuovi la classe active da tutte le sezioni
+            sections.forEach(section => section.classList.remove('active'));
+            
+            // Aggiungi la classe active alla sezione corrente
+            entry.target.classList.add('active');
+            
+            // Anima i numeri se ci sono statistiche
+            const stats = entry.target.querySelectorAll('.strava-stat-number');
+            stats.forEach(stat => {
+              const value = parseFloat(stat.getAttribute('data-value'));
+              animateValue(stat, 0, value, 1500);
+            });
+          }
+        });
+      }, { threshold: 0.5 });
+      
+      // Osserva tutte le sezioni
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+      
+      // Inizializzazione delle mappe
+      if (document.getElementById('map1')) {
+        // Mappa 1: Tour delle Colline
+        const map1 = L.map('map1').setView([45.7, 9.67], 12);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          maxZoom: 18
+        }).addTo(map1);
+        
+        // Percorso simulato per Tour delle Colline
+        const latlngs1 = [
+          [45.70, 9.65],
+          [45.71, 9.66],
+          [45.72, 9.68],
+          [45.73, 9.70],
+          [45.72, 9.72],
+          [45.71, 9.73],
+          [45.70, 9.72],
+          [45.69, 9.70],
+          [45.68, 9.68],
+          [45.69, 9.66],
+          [45.70, 9.65]
+        ];
+        
+        const polyline1 = L.polyline(latlngs1, {
+          color: '#4A7C59',
+          weight: 5,
+          opacity: 0.8
+        }).addTo(map1);
+        
+        map1.fitBounds(polyline1.getBounds());
+      }
+      
+      if (document.getElementById('map2')) {
+        // Mappa 2: Città Alta e Dintorni
+        const map2 = L.map('map2').setView([45.7, 9.67], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          maxZoom: 18
+        }).addTo(map2);
+        
+        // Percorso simulato per Città Alta e Dintorni
+        const latlngs2 = [
+          [45.705, 9.662],
+          [45.710, 9.665],
+          [45.715, 9.670],
+          [45.718, 9.675],
+          [45.715, 9.680],
+          [45.710, 9.685],
+          [45.705, 9.680],
+          [45.700, 9.675],
+          [45.698, 9.670],
+          [45.700, 9.665],
+          [45.705, 9.662]
+        ];
+        
+        const polyline2 = L.polyline(latlngs2, {
+          color: '#4A7C59',
+          weight: 5,
+          opacity: 0.8
+        }).addTo(map2);
+        
+        map2.fitBounds(polyline2.getBounds());
+      }
+      
+      if (document.getElementById('map3')) {
+        // Mappa 3: Valli Bergamasche
+        const map3 = L.map('map3').setView([45.8, 9.7], 11);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          maxZoom: 18
+        }).addTo(map3);
+        
+        // Percorso simulato per Valli Bergamasche
+        const latlngs3 = [
+          [45.75, 9.65],
+          [45.78, 9.67],
+          [45.82, 9.70],
+          [45.85, 9.73],
+          [45.88, 9.75],
+          [45.85, 9.78],
+          [45.82, 9.80],
+          [45.78, 9.78],
+          [45.75, 9.75],
+          [45.72, 9.70],
+          [45.75, 9.65]
+        ];
+        
+        const polyline3 = L.polyline(latlngs3, {
+          color: '#4A7C59',
+          weight: 5,
+          opacity: 0.8
+        }).addTo(map3);
+        
+        map3.fitBounds(polyline3.getBounds());
+      }
+      
+      // Gestione del carousel delle mappe
+      const mapSlides = document.querySelectorAll('.map-slide');
+      const mapIndicators = document.querySelectorAll('.map-carousel-controls .map-indicator');
+      let currentMapSlide = 0;
+      
+      function showMapSlide(index) {
+        // Rimuovi la classe active da tutti gli elementi
+        mapSlides.forEach(slide => slide.classList.remove('active'));
+        mapIndicators.forEach(indicator => indicator.classList.remove('active'));
+        
+        // Aggiungi la classe active all'elemento corrente
+        mapSlides[index].classList.add('active');
+        mapIndicators[index].classList.add('active');
+        currentMapSlide = index;
+      }
+      
+      // Event listeners per gli indicatori delle mappe
+      mapIndicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+          showMapSlide(index);
+        });
+      });
+      
+      // Gestione del carousel misto
+      const mixedSlides = document.querySelectorAll('.mixed-slide');
+      const mixedIndicators = document.querySelectorAll('#mixed-gallery .map-carousel-controls .map-indicator');
+      let currentMixedSlide = 0;
+      
+      function showMixedSlide(index) {
+        // Rimuovi la classe active da tutti gli elementi
+        mixedSlides.forEach(slide => slide.classList.remove('active'));
+        mixedIndicators.forEach(indicator => indicator.classList.remove('active'));
+        
+        // Aggiungi la classe active all'elemento corrente
+        mixedSlides[index].classList.add('active');
+        mixedIndicators[index].classList.add('active');
+        currentMixedSlide = index;
+      }
+      
+      // Event listeners per gli indicatori del carousel misto
+      mixedIndicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+          showMixedSlide(index);
+        });
+      });
+      
+      // Rotazione automatica dei carousel
+      setInterval(() => {
+        let nextMapSlide = currentMapSlide + 1;
+        if (nextMapSlide >= mapSlides.length) nextMapSlide = 0;
+        showMapSlide(nextMapSlide);
+      }, 8000);
+      
+      setInterval(() => {
+        let nextMixedSlide = currentMixedSlide + 1;
+        if (nextMixedSlide >= mixedSlides.length) nextMixedSlide = 0;
+        showMixedSlide(nextMixedSlide);
+      }, 7000);
+    });
+  </script>
+</body>
+</html>

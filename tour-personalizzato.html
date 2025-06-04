@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Personalizzato in Bici | Crea il Tuo Itinerario | Strade Segrete</title>
+    <meta name="description" content="Crea il tuo tour in bici personalizzato nel Nord Italia. Scegli destinazioni, difficoltà, durata e interessi gastronomici per un'esperienza su misura.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Tour Personalizzato in Bici | Crea il Tuo Itinerario | Strade Segrete">
+    <meta property="og:description" content="Crea il tuo tour in bici personalizzato nel Nord Italia. Scegli destinazioni, difficoltà, durata e interessi gastronomici per un'esperienza su misura.">
+    <meta property="og:image" content="images/og-image-custom-tour.jpg">
+    <meta property="og:url" content="https://stradesegrete.it/tour-personalizzato.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Tour in Bici Personalizzato nel Nord Italia",
+      "description": "Servizio di creazione di tour in bici personalizzati nel Nord Italia, con focus su strade poco conosciute e gastronomia locale.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Strade Segrete",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://stradesegrete.it/images/logo.png"
+        }
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Nord Italia"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "EUR",
+          "minPrice": "890",
+          "maxPrice": "2290"
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
+    
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Strade Segrete Logo">
+                </a>
+                
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="destinazioni.html">Destinazioni</a></li>
+                        <li><a href="tour.html">Tour</a></li>
+                        <li><a href="sapori.html">Sapori del Nord</a></li>
+                        <li><a href="tour-personalizzato.html" class="active">Tour Personalizzato</a></li>
+                        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="tour-personalizzato.html" class="btn btn-primary hide-mobile">Crea il Tuo Tour</a>
+                
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="nav-mobile">
+                    <ul>
+                        <li><a href="destinazioni.html">Destinazioni</a></li>
+                        <li><a href="tour.html">Tour</a></li>
+                        <li><a href="sapori.html">Sapori del Nord</a></li>
+                        <li><a href="tour-personalizzato.html" class="active">Tour Personalizzato</a></li>
+                        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('images/custom-tour-header-bg.jpg');">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 id="main-content">Crea il Tuo Tour Personalizzato</h1>
+                <p>Un'esperienza su misura per te nel Nord Italia</p>
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li aria-current="page">Tour Personalizzato</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Intro Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2 align-center">
+                <div class="animate-on-scroll">
+                    <h2>Il Tour dei Tuoi Sogni</h2>
+                    <p class="mb-md">Ogni ciclista è unico, con preferenze, livelli di esperienza e interessi diversi. Per questo offriamo la possibilità di creare un tour completamente personalizzato nel Nord Italia, adattato alle tue esigenze specifiche.</p>
+                    <p class="mb-md">I nostri esperti locali lavoreranno con te per progettare un'esperienza su misura, che combini le strade più belle e meno conosciute con le esperienze gastronomiche più autentiche della regione che desideri esplorare.</p>
+                    <p>Compila il form qui sotto per iniziare a creare il tour dei tuoi sogni nel Nord Italia!</p>
+                </div>
+                <div class="animate-on-scroll">
+                    <img src="images/custom-tour-intro.jpg" alt="Ciclista su strada panoramica nel Nord Italia" class="rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Custom Tour Form -->
+    <section class="section bg-cream">
+        <div class="container">
+            <div class="section-title">
+                <h2>Configuratore Tour</h2>
+                <p>Compila il form per ricevere una proposta personalizzata per il tuo tour in bici nel Nord Italia</p>
+            </div>
+            
+            <div class="custom-tour-form-container">
+                <form id="custom-tour-form" class="custom-tour-form">
+                    <!-- Step 1: Informazioni Personali -->
+                    <div class="form-step active" id="step-1">
+                        <h3 class="form-step-title">1. Informazioni Personali</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Nome e Cognome *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefono</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="country">Paese di Provenienza *</label>
+                                <select id="country" name="country" required>
+                                    <option value="">Seleziona</option>
+                                    <option value="IT">Italia</option>
+                                    <option value="FR">Francia</option>
+                                    <option value="DE">Germania</option>
+                                    <option value="UK">Regno Unito</option>
+                                    <option value="US">Stati Uniti</option>
+                                    <option value="other">Altro</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Numero di Partecipanti *</label>
+                            <div class="number-selector">
+                                <button type="button" class="number-btn minus" aria-label="Diminuisci numero partecipanti">-</button>
+                                <input type="number" id="participants" name="participants" min="1" max="20" value="2" required>
+                                <button type="button" class="number-btn plus" aria-label="Aumenta numero partecipanti">+</button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-primary next-step">Continua</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2: Dettagli del Tour -->
+                    <div class="form-step" id="step-2">
+                        <h3 class="form-step-title">2. Dettagli del Tour</h3>
+                        
+                        <div class="form-group">
+                            <label>Regioni di Interesse *</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="region-dolomiti" name="regions[]" value="dolomiti">
+                                    <label for="region-dolomiti">Dolomiti</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="region-laghi" name="regions[]" value="laghi">
+                                    <label for="region-laghi">Laghi del Nord</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="region-piemonte" name="regions[]" value="piemonte">
+                                    <label for="region-piemonte">Piemonte</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="region-veneto" name="regions[]" value="veneto">
+                                    <label for="region-veneto">Veneto</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="region-trentino" name="regions[]" value="trentino">
+                                    <label for="region-trentino">Trentino-Alto Adige</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="region-lombardia" name="regions[]" value="lombardia">
+                                    <label for="region-lombardia">Lombardia</label>
+                                </div>
+                            </div>
+                            <div class="form-error" id="regions-error">Seleziona almeno una regione</div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="duration">Durata Desiderata *</label>
+                                <select id="duration" name="duration" required>
+                                    <option value="">Seleziona</option>
+                                    <option value="weekend">Weekend (2-3 giorni)</option>
+                                    <option value="short">Tour Breve (4-5 giorni)</option>
+                                    <option value="week">Settimana (6-7 giorni)</option>
+                                    <option value="long">Tour Lungo (8+ giorni)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="difficulty">Livello di Difficoltà *</label>
+                                <select id="difficulty" name="difficulty" required>
+                                    <option value="">Seleziona</option>
+                                    <option value="facile">Facile (30-50 km/giorno, dislivello minimo)</option>
+                                    <option value="facile-intermedio">Facile-Intermedio (40-70 km/giorno, alcune salite)</option>
+                                    <option value="intermedio">Intermedio (50-80 km/giorno, salite regolari)</option>
+                                    <option value="intermedio-avanzato">Intermedio-Avanzato (60-100 km/giorno, salite impegnative)</option>
+                                    <option value="avanzato">Avanzato (80-120 km/giorno, salite lunghe e ripide)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bike-type">Tipo di Bici *</label>
+                                <select id="bike-type" name="bike_type" required>
+                                    <option value="">Seleziona</option>
+                                    <option value="road">Bici da Corsa</option>
+                                    <option value="gravel">Gravel</option>
+                                    <option value="ebike">E-Bike</option>
+                                    <option value="hybrid">Ibrida</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="bike-rental">Noleggio Bici</label>
+                                <select id="bike-rental" name="bike_rental">
+                                    <option value="no">No, porterò la mia bici</option>
+                                    <option value="yes">Sì, vorrei noleggiare una bici</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="travel-dates">Date di Viaggio Preferite</label>
+                            <input type="text" id="travel-dates" name="travel_dates" placeholder="es. Giugno 2025, prima metà di Luglio, ecc.">
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-tertiary prev-step">Indietro</button>
+                            <button type="button" class="btn btn-primary next-step">Continua</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3: Preferenze -->
+                    <div class="form-step" id="step-3">
+                        <h3 class="form-step-title">3. Preferenze ed Esperienze</h3>
+                        
+                        <div class="form-group">
+                            <label>Interessi Gastronomici</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="food-wine" name="food_interests[]" value="wine">
+                                    <label for="food-wine">Degustazioni di Vini</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="food-cheese" name="food_interests[]" value="cheese">
+                                    <label for="food-cheese">Formaggi d'Alpeggio</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="food-truffle" name="food_interests[]" value="truffle">
+                                    <label for="food-truffle">Tartufi e Specialità</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="food-cooking" name="food_interests[]" value="cooking">
+                                    <label for="food-cooking">Cooking Class</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="food-restaurant" name="food_interests[]" value="restaurant">
+                                    <label for="food-restaurant">Ristoranti Stellati</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Tipo di Alloggio Preferito</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" id="accommodation-standard" name="accommodation" value="standard" checked>
+                                    <label for="accommodation-standard">Standard (3 stelle, agriturismi)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="accommodation-comfort" name="accommodation" value="comfort">
+                                    <label for="accommodation-comfort">Comfort (4 stelle, boutique hotel)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="accommodation-luxury" name="accommodation" value="luxury">
+                                    <label for="accommodation-luxury">Lusso (5 stelle, dimore storiche)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="accommodation-mixed" name="accommodation" value="mixed">
+                                    <label for="accommodation-mixed">Misto (combinazione di diverse categorie)</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="additional-services">Servizi Aggiuntivi</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="service-guide" name="additional_services[]" value="guide">
+                                    <label for="service-guide">Guida Ciclistica</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="service-support" name="additional_services[]" value="support">
+                                    <label for="service-support">Veicolo di Supporto</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="service-luggage" name="additional_services[]" value="luggage">
+                                    <label for="service-luggage">Trasporto Bagagli</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="service-mechanic" name="additional_services[]" value="mechanic">
+                                    <label for="service-mechanic">Assistenza Meccanica</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="service-gps" name="additional_services[]" value="gps">
+                                    <label for="service-gps">Tracce GPS</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="service-transfer" name="additional_services[]" value="transfer">
+                                    <label for="service-transfer">Transfer da/per Aeroporto</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Budget Indicativo per Persona</label>
+                            <select id="budget" name="budget">
+                                <option value="">Seleziona</option>
+                                <option value="economy">Economy (fino a €1,000)</option>
+                                <option value="standard">Standard (€1,000 - €1,500)</option>
+                                <option value="premium">Premium (€1,500 - €2,000)</option>
+                                <option value="luxury">Lusso (oltre €2,000)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-tertiary prev-step">Indietro</button>
+                            <button type="button" class="btn btn-primary next-step">Continua</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4: Note Aggiuntive -->
+                    <div class="form-step" id="step-4">
+                        <h3 class="form-step-title">4. Note Aggiuntive</h3>
+                        
+                        <div class="form-group">
+                            <label for="special-requests">Richieste Speciali o Note</label>
+                            <textarea id="special-requests" name="special_requests" rows="5" placeholder="Inserisci qui eventuali richieste speciali, preferenze alimentari, esigenze particolari o qualsiasi altra informazione utile per personalizzare il tuo tour."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="hear-about">Come hai conosciuto Strade Segrete?</label>
+                            <select id="hear-about" name="hear_about">
+                                <option value="">Seleziona</option>
+                                <option value="search">Motore di Ricerca</option>
+                                <option value="social">Social Media</option>
+                                <option value="friend">Passaparola</option>
+                                <option value="magazine">Rivista/Blog</option>
+                                <option value="other">Altro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group checkbox-single">
+                            <input type="checkbox" id="privacy-policy" name="privacy_policy" required>
+                            <label for="privacy-policy">Ho letto e accetto la <a href="privacy.html" target="_blank">Privacy Policy</a> *</label>
+                            <div class="form-error" id="privacy-error">Devi accettare la Privacy Policy</div>
+                        </div>
+                        
+                        <div class="form-group checkbox-single">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Desidero ricevere la newsletter con offerte e novità sui tour in bici nel Nord Italia</label>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-tertiary prev-step">Indietro</button>
+                            <button type="submit" class="btn btn-primary">Invia Richiesta</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Form Progress -->
+                    <div class="form-progress">
+                        <div class="progress-step active" data-step="1">1</div>
+                        <div class="progress-bar"></div>
+                        <div class="progress-step" data-step="2">2</div>
+                        <div class="progress-bar"></div>
+                        <div class="progress-step" data-step="3">3</div>
+                        <div class="progress-bar"></div>
+                        <div class="progress-step" data-step="4">4</div>
+                    </div>
+                </form>
+                
+                <!-- Form Success Message -->
+                <div class="form-success" style="display: none;">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Richiesta Inviata con Successo!</h3>
+                    <p>Grazie per averci contattato. Un nostro esperto ti risponderà entro 24 ore con una proposta personalizzata per il tuo tour in bici nel Nord Italia.</p>
+                    <p>Nel frattempo, puoi esplorare il nostro blog per ispirarti e scoprire di più sulle destinazioni che ti interessano.</p>
+                    <div class="success-actions">
+                        <a href="blog.html" class="btn btn-tertiary">Visita il Blog</a>
+                        <a href="index.html" class="btn btn-primary">Torna alla Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Custom Tour -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Perché Scegliere un Tour Personalizzato</h2>
+                <p>I vantaggi di un'esperienza su misura nel Nord Italia</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Itinerari Esclusivi</h3>
+                    <p>Percorsi creati su misura in base ai tuoi interessi, livello di esperienza e preferenze, con strade poco conosciute ma di straordinaria bellezza nel Nord Italia.</p>
+                </div>
+                
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Flessibilità Totale</h3>
+                    <p>Scegli le date, la durata e il ritmo che preferisci. Nessun vincolo di calendario o gruppo, solo la libertà di pedalare come e quando vuoi nel Nord Italia.</p>
+                </div>
+                
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Gruppo Privato</h3>
+                    <p>Viaggia solo con le persone che hai scelto tu, che siano amici, familiari o compagni di club. Un'esperienza intima e condivisa tra le bellezze del Nord Italia.</p>
+                </div>
+                
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Esperienze Gastronomiche Selezionate</h3>
+                    <p>Degustazioni e cene in base ai tuoi gusti e interessi, per scoprire i sapori autentici del Nord Italia che più ti appassionano.</p>
+                </div>
+                
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>Servizi Premium</h3>
+                    <p>Dalla guida privata al trasporto bagagli, dall'assistenza meccanica agli alloggi di charme: tutto è personalizzabile in base alle tue esigenze.</p>
+                </div>
+                
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Ricordi Indimenticabili</h3>
+                    <p>Un'esperienza unica e irripetibile, creata appositamente per te, che ti lascerà ricordi indelebili del Nord Italia e delle sue meraviglie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="section bg-cream">
+        <div class="container">
+            <div class="section-title">
+                <h2>Esperienze dei Nostri Clienti</h2>
+                <p>Cosa dicono i ciclisti che hanno scelto un tour personalizzato nel Nord Italia</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="testimonial-text">
+                                    "Il team di Strade Segrete ha creato per noi un tour perfetto nelle Dolomiti. Hanno capito esattamente cosa cercavamo: strade poco trafficate, salite impegnative ma non estreme, e soprattutto esperienze gastronomiche autentiche. La guida locale conosceva ogni angolo e ogni produttore, rendendo il viaggio davvero speciale."
+                                </div>
+                                <div class="testimonial-author">
+                                    <img src="images/testimonial-custom-1.jpg" alt="Roberto e Claudia">
+                                    <div>
+                                        <div class="testimonial-name">Roberto e Claudia</div>
+                                        <div class="testimonial-location">Firenze, Italia</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="testimonial-text">
+                                    "Volevamo un tour che combinasse ciclismo e enogastronomia nel Piemonte, e Strade Segrete ha superato ogni aspettativa. Hanno organizzato degustazioni private in cantine storiche, pranzi con produttori locali e persino una caccia al tartufo. Tutto questo pedalando su strade meravigliose che non avremmo mai trovato da soli."
+                                </div>
+                                <div class="testimonial-author">
+                                    <img src="images/testimonial-custom-2.jpg" alt="Cycling Club Amsterdam">
+                                    <div>
+                                        <div class="testimonial-name">Cycling Club Amsterdam</div>
+                                        <div class="testimonial-location">Amsterdam, Paesi Bassi</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="testimonial-text">
+                                    "Per il nostro anniversario di matrimonio volevo sorprendere mia moglie con un tour in e-bike tra i laghi del Nord Italia. Strade Segrete ha creato un itinerario perfetto, con hotel romantici, ristoranti stellati e percorsi panoramici accessibili anche a ciclisti non esperti come noi. Un'esperienza che ricorderemo per sempre."
+                                </div>
+                                <div class="testimonial-author">
+                                    <img src="images/testimonial-custom-3.jpg" alt="Michael S.">
+                                    <div>
+                                        <div class="testimonial-name">Michael S.</div>
+                                        <div class="testimonial-location">Chicago, USA</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Domande Frequenti</h2>
+                <p>Tutto quello che devi sapere sui tour personalizzati nel Nord Italia</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Quanto tempo prima devo prenotare un tour personalizzato?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Per garantire la disponibilità delle migliori strutture ricettive e guide, consigliamo di prenotare il tuo tour personalizzato nel Nord Italia con almeno 2-3 mesi di anticipo, specialmente per la stagione estiva (maggio-settembre). Per periodi di alta stagione o gruppi numerosi, è preferibile prenotare con 4-6 mesi di anticipo. Tuttavia, siamo in grado di organizzare tour anche con preavviso più breve, in base alla disponibilità.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Qual è il numero minimo/massimo di partecipanti per un tour personalizzato?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I nostri tour personalizzati nel Nord Italia sono disponibili anche per un singolo ciclista. Non c'è un numero minimo di partecipanti richiesto. Per quanto riguarda il numero massimo, possiamo gestire gruppi fino a 20 persone, ma l'esperienza ottimale si ottiene con gruppi di 4-12 ciclisti. Per gruppi più numerosi, organizziamo sottogruppi con guide separate per garantire un'esperienza di qualità e un'assistenza adeguata.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Posso modificare l'itinerario durante il tour?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sì, i nostri tour personalizzati nel Nord Italia offrono un certo grado di flessibilità. Se durante il tour desideri apportare modifiche all'itinerario, la nostra guida farà il possibile per accomodare le tue richieste, compatibilmente con la disponibilità delle strutture ricettive e la logistica. Per modifiche sostanziali (come cambi di alloggio o destinazione), potrebbe essere necessario un supplemento. Ti consigliamo di discutere eventuali esigenze di flessibilità già in fase di pianificazione.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Come funziona il processo di creazione di un tour personalizzato?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Il processo di creazione di un tour personalizzato nel Nord Italia si articola in queste fasi:</p>
+                        <ol>
+                            <li><strong>Richiesta iniziale:</strong> Compili il form con le tue preferenze e requisiti.</li>
+                            <li><strong>Consulenza:</strong> Entro 24-48 ore, un nostro esperto ti contatta per approfondire le tue esigenze.</li>
+                            <li><strong>Proposta:</strong> Entro una settimana, ricevi una proposta dettagliata con itinerario e preventivo.</li>
+                            <li><strong>Perfezionamento:</strong> Lavoriamo insieme per affinare la proposta fino a soddisfare completamente le tue aspettative.</li>
+                            <li><strong>Conferma:</strong> Una volta approvata la proposta, confermi con un acconto del 30%.</li>
+                            <li><strong>Preparazione:</strong> Ti inviamo materiale informativo e dettagli logistici.</li>
+                            <li><strong>Esperienza:</strong> Vivi il tuo tour personalizzato nel Nord Italia!</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Qual è la differenza di prezzo rispetto ai tour standard?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Il prezzo di un tour personalizzato nel Nord Italia dipende da numerosi fattori: durata, regioni visitate, tipologia di alloggi, servizi inclusi, numero di partecipanti e periodo dell'anno. In generale, un tour personalizzato può costare dal 15% al 30% in più rispetto a un tour standard equivalente, a causa della personalizzazione e dell'esclusività dei servizi.</p>
+                        <p>Tuttavia, per gruppi di 4 o più persone, il costo per partecipante può diventare competitivo o addirittura inferiore rispetto ai tour standard, grazie all'economia di scala. Inoltre, un tour personalizzato ti permette di scegliere esattamente i servizi che desideri, ottimizzando il rapporto qualità-prezzo in base alle tue priorità.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-lg">
+                <a href="faq.html" class="btn btn-tertiary">Vedi tutte le FAQ</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h3>Resta Aggiornato</h3>
+            <p>Iscriviti alla nostra newsletter per ricevere itinerari esclusivi, consigli e offerte speciali sui tour in bici nel Nord Italia.</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Il tuo indirizzo email" required aria-label="Indirizzo email">
+                <button type="submit" class="newsletter-btn">Iscriviti</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <img src="images/logo-white.png" alt="Strade Segrete" class="footer-logo">
+                    <p>Tour guidati in bici da corsa e gravel alla scoperta delle strade meno conosciute del Nord Italia e delle autentiche tradizioni gastronomiche locali.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Strava"><i class="fab fa-strava"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Tour</h4>
+                    <ul>
+                        <li><a href="tour.html">Tutti i Tour</a></li>
+                        <li><a href="destinazioni/dolomiti.html">Dolomiti</a></li>
+                        <li><a href="destinazioni/laghi.html">Laghi del Nord</a></li>
+                        <li><a href="destinazioni/piemonte.html">Piemonte</a></li>
+                        <li><a href="tour-personalizzato.html">Tour Personalizzati</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Informazioni</h4>
+                    <ul>
+                        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="termini.html">Termini e Condizioni</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="cookie.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contattaci</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Via del Ciclismo 123, Milano</li>
+                        <li><i class="fas fa-phone"></i> +39 02 1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@stradesegrete.it</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 Strade Segrete. Tutti i diritti riservati.
+                </div>
+                <div>
+                    <img src="images/payment-methods.png" alt="Metodi di pagamento accettati" height="30">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Custom Tour Form JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('custom-tour-form');
+            const formSteps = document.querySelectorAll('.form-step');
+            const progressSteps = document.querySelectorAll('.progress-step');
+            const nextButtons = document.querySelectorAll('.next-step');
+            const prevButtons = document.querySelectorAll('.prev-step');
+            const formSuccess = document.querySelector('.form-success');
+            
+            // Number selector functionality
+            const minusBtn = document.querySelector('.number-btn.minus');
+            const plusBtn = document.querySelector('.number-btn.plus');
+            const participantsInput = document.getElementById('participants');
+            
+            if (minusBtn && plusBtn && participantsInput) {
+                minusBtn.addEventListener('click', function() {
+                    const currentValue = parseInt(participantsInput.value);
+                    if (currentValue > parseInt(participantsInput.min)) {
+                        participantsInput.value = currentValue - 1;
+                    }
+                });
+                
+                plusBtn.addEventListener('click', function() {
+                    const currentValue = parseInt(participantsInput.value);
+                    if (currentValue < parseInt(participantsInput.max)) {
+                        participantsInput.value = currentValue + 1;
+                    }
+                });
+            }
+            
+            // Next step buttons
+            nextButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const currentStep = this.closest('.form-step');
+                    const currentStepIndex = Array.from(formSteps).indexOf(currentStep);
+                    
+                    // Validate current step
+                    if (validateStep(currentStepIndex + 1)) {
+                        // Hide current step
+                        currentStep.classList.remove('active');
+                        
+                        // Show next step
+                        formSteps[currentStepIndex + 1].classList.add('active');
+                        
+                        // Update progress
+                        updateProgress(currentStepIndex + 2);
+                        
+                        // Scroll to top of form
+                        scrollToFormTop();
+                    }
+                });
+            });
+            
+            // Previous step buttons
+            prevButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const currentStep = this.closest('.form-step');
+                    const currentStepIndex = Array.from(formSteps).indexOf(currentStep);
+                    
+                    // Hide current step
+                    currentStep.classList.remove('active');
+                    
+                    // Show previous step
+                    formSteps[currentStepIndex - 1].classList.add('active');
+                    
+                    // Update progress
+                    updateProgress(currentStepIndex);
+                    
+                    // Scroll to top of form
+                    scrollToFormTop();
+                });
+            });
+            
+            // Progress steps click
+            progressSteps.forEach(step => {
+                step.addEventListener('click', function() {
+                    const stepNumber = parseInt(this.getAttribute('data-step'));
+                    const currentActiveStep = document.querySelector('.form-step.active');
+                    const currentStepIndex = Array.from(formSteps).indexOf(currentActiveStep);
+                    const currentStepNumber = currentStepIndex + 1;
+                    
+                    // Can only go back to previous steps or current step
+                    if (stepNumber <= currentStepNumber) {
+                        // Hide current step
+                        currentActiveStep.classList.remove('active');
+                        
+                        // Show selected step
+                        formSteps[stepNumber - 1].classList.add('active');
+                        
+                        // Update progress
+                        updateProgress(stepNumber);
+                        
+                        // Scroll to top of form
+                        scrollToFormTop();
+                    }
+                });
+            });
+            
+            // Form submission
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Validate final step
+                    if (validateStep(4)) {
+                        // Simulate form submission
+                        const submitBtn = this.querySelector('button[type="submit"]');
+                        const originalText = submitBtn.textContent;
+                        submitBtn.textContent = 'Invio in corso...';
+                        submitBtn.disabled = true;
+                        
+                        // Simulate API call
+                        setTimeout(() => {
+                            // Hide form
+                            form.style.display = 'none';
+                            
+                            // Show success message
+                            formSuccess.style.display = 'block';
+                            
+                            // Scroll to top of container
+                            const formContainer = document.querySelector('.custom-tour-form-container');
+                            formContainer.scrollIntoView({ behavior: 'smooth' });
+                        }, 1500);
+                    }
+                });
+            }
+            
+            // Update progress bar
+            function updateProgress(step) {
+                progressSteps.forEach(progressStep => {
+                    const stepNumber = parseInt(progressStep.getAttribute('data-step'));
+                    
+                    if (stepNumber < step) {
+                        progressStep.classList.add('active');
+                        progressStep.classList.add('completed');
+                    } else if (stepNumber === step) {
+                        progressStep.classList.add('active');
+                        progressStep.classList.remove('completed');
+                    } else {
+                        progressStep.classList.remove('active');
+                        progressStep.classList.remove('completed');
+                    }
+                });
+            }
+            
+            // Validate step
+            function validateStep(step) {
+                let isValid = true;
+                
+                switch (step) {
+                    case 1:
+                        // Validate required fields in step 1
+                        const name = document.getElementById('name');
+                        const email = document.getElementById('email');
+                        const country = document.getElementById('country');
+                        
+                        if (!name.value.trim()) {
+                            highlightInvalidField(name);
+                            isValid = false;
+                        } else {
+                            removeInvalidHighlight(name);
+                        }
+                        
+                        if (!email.value.trim() || !isValidEmail(email.value)) {
+                            highlightInvalidField(email);
+                            isValid = false;
+                        } else {
+                            removeInvalidHighlight(email);
+                        }
+                        
+                        if (!country.value) {
+                            highlightInvalidField(country);
+                            isValid = false;
+                        } else {
+                            removeInvalidHighlight(country);
+                        }
+                        break;
+                        
+                    case 2:
+                        // Validate required fields in step 2
+                        const regionCheckboxes = document.querySelectorAll('input[name="regions[]"]');
+                        const duration = document.getElementById('duration');
+                        const difficulty = document.getElementById('difficulty');
+                        const bikeType = document.getElementById('bike-type');
+                        const regionsError = document.getElementById('regions-error');
+                        
+                        let regionsSelected = false;
+                        regionCheckboxes.forEach(checkbox => {
+                            if (checkbox.checked) {
+                                regionsSelected = true;
+                            }
+                        });
+                        
+                        if (!regionsSelected) {
+                            regionsError.style.display = 'block';
+                            isValid = false;
+                        } else {
+                            regionsError.style.display = 'none';
+                        }
+                        
+                        if (!duration.value) {
+                            highlightInvalidField(duration);
+                            isValid = false;
+                        } else {
+                            removeInvalidHighlight(duration);
+                        }
+                        
+                        if (!difficulty.value) {
+                            highlightInvalidField(difficulty);
+                            isValid = false;
+                        } else {
+                            removeInvalidHighlight(difficulty);
+                        }
+                        
+                        if (!bikeType.value) {
+                            highlightInvalidField(bikeType);
+                            isValid = false;
+                        } else {
+                            removeInvalidHighlight(bikeType);
+                        }
+                        break;
+                        
+                    case 4:
+                        // Validate privacy policy acceptance
+                        const privacyPolicy = document.getElementById('privacy-policy');
+                        const privacyError = document.getElementById('privacy-error');
+                        
+                        if (!privacyPolicy.checked) {
+                            privacyError.style.display = 'block';
+                            isValid = false;
+                        } else {
+                            privacyError.style.display = 'none';
+                        }
+                        break;
+                }
+                
+                return isValid;
+            }
+            
+            // Helper functions
+            function highlightInvalidField(field) {
+                field.classList.add('invalid');
+            }
+            
+            function removeInvalidHighlight(field) {
+                field.classList.remove('invalid');
+            }
+            
+            function isValidEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+            
+            function scrollToFormTop() {
+                const formContainer = document.querySelector('.custom-tour-form-container');
+                formContainer.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

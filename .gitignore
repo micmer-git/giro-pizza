@@ -1,0 +1,49 @@
+# .gitignore per Strade Segrete
+
+# File di sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor e IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# File temporanei
+*.tmp
+*.log
+*.bak
+*~
+
+# File di ambiente
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Dipendenze e build
+node_modules/
+dist/
+build/
+vendor/
+.sass-cache/
+*.css.map
+*.js.map
+
+# File specifici del progetto
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# File di debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# File di backup
+backup/
