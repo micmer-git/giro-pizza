@@ -323,6 +323,22 @@ h3 {
   transition: opacity 1s ease;
 }
 
+.carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0));
+  z-index: 0;
+}
+
+.carousel-item > * {
+  position: relative;
+  z-index: 1;
+}
+
 .carousel-item.active {
   opacity: 1;
 }
@@ -405,6 +421,12 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+#contact-form .content {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  overflow-y: auto;
 }
 
 .form-group {
@@ -529,9 +551,10 @@ h3 {
   }
   
   .stats {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
-    align-items: flex-start;
+    justify-content: center;
   }
   
   #tour-bergamo .content {
